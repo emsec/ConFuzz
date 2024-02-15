@@ -1,0 +1,10 @@
+
+Fuzzing session completed: ctl1_register_reserved_2023-08-29T00-54-32.839927
+Runtime: 3:31:12.573583
+Test Summary: 524287 tests ran.
+PASSED: 524287 test cases.
+
+
+real	211m12,866s
+user	59m9,767s
+sys	17m12,491s

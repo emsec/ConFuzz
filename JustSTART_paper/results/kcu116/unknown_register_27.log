@@ -1,0 +1,10 @@
+
+Fuzzing session completed: unknown_register_27_2023-08-28T07-16-53.211484
+Runtime: 3:30:21.978961
+Test Summary: 524287 tests ran.
+PASSED: 524287 test cases.
+
+
+real	210m22,294s
+user	58m57,899s
+sys	17m2,973s

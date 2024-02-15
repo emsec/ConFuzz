@@ -1,0 +1,80 @@
+Counting test cases...
+8 test cases found
+
+test_cases_per_board: 1, rest: 0
+board: 0, index_start: 1, index_end: 1, openocd_port: 6666, openocd_bus_port: 3-1.3.4
+board: 1, index_start: 2, index_end: 2, openocd_port: 6667, openocd_bus_port: 3-1.4.3
+board: 2, index_start: 3, index_end: 3, openocd_port: 6668, openocd_bus_port: 3-1.2.4
+board: 3, index_start: 4, index_end: 4, openocd_port: 6669, openocd_bus_port: 3-1.3.3
+board: 4, index_start: 5, index_end: 5, openocd_port: 6670, openocd_bus_port: 3-1.4.2
+board: 5, index_start: 6, index_end: 6, openocd_port: 6671, openocd_bus_port: 3-1.1.4
+board: 6, index_start: 7, index_end: 7, openocd_port: 6672, openocd_bus_port: 3-1.2.3
+board: 7, index_start: 8, index_end: 8, openocd_port: 6673, openocd_bus_port: 3-1.3.2
+
+Fuzzing session completed: far_register_block_type_2023-08-31T21-47-18.870959
+Runtime: 0:00:00.024945
+Test Summary: 1 tests ran.
+PASSED: 1 test cases.
+FAILED: 1 test cases:
+7: far_request:[far_request.fuzzed_far_value:6]
+
+Fuzzing session completed: far_register_block_type_2023-08-31T21-47-18.870753
+Runtime: 0:00:00.024564
+Test Summary: 1 tests ran.
+PASSED: 1 test cases.
+FAILED: 1 test cases:
+2: far_request:[far_request.fuzzed_far_value:1]
+
+
+
+Fuzzing session completed: far_register_block_type_2023-08-31T21-47-18.870748
+Runtime: 0:00:00.020393
+Test Summary: 1 tests ran.
+PASSED: 1 test cases.
+FAILED: 1 test cases:
+1: far_request:[far_request.fuzzed_far_value:0]
+
+
+Fuzzing session completed: far_register_block_type_2023-08-31T21-47-18.870940
+Runtime: 0:00:00.021670
+Test Summary: 1 tests ran.
+PASSED: 1 test cases.
+FAILED: 1 test cases:
+8: far_request:[far_request.fuzzed_far_value:7]
+
+
+Fuzzing session completed: far_register_block_type_2023-08-31T21-47-18.870822
+Runtime: 0:00:00.023022
+Test Summary: 1 tests ran.
+PASSED: 1 test cases.
+FAILED: 1 test cases:
+4: far_request:[far_request.fuzzed_far_value:3]
+
+
+Fuzzing session completed: far_register_block_type_2023-08-31T21-47-18.870801
+Runtime: 0:00:00.023876
+Test Summary: 1 tests ran.
+PASSED: 1 test cases.
+FAILED: 1 test cases:
+5: far_request:[far_request.fuzzed_far_value:4]
+
+
+Fuzzing session completed: far_register_block_type_2023-08-31T21-47-18.870750
+Runtime: 0:00:00.021249
+Test Summary: 1 tests ran.
+PASSED: 1 test cases.
+FAILED: 1 test cases:
+3: far_request:[far_request.fuzzed_far_value:2]
+
+
+Fuzzing session completed: far_register_block_type_2023-08-31T21-47-18.870949
+Runtime: 0:00:00.020837
+Test Summary: 1 tests ran.
+PASSED: 1 test cases.
+FAILED: 1 test cases:
+6: far_request:[far_request.fuzzed_far_value:5]
+
+
+real	0m0,613s
+user	0m0,617s
+sys	0m0,227s

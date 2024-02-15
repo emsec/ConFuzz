@@ -1,0 +1,3 @@
+[submodule "boofuzz"]
+	path = boofuzz
+	url = https://github.com/emsec/boofuzz

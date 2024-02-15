@@ -1,0 +1,12 @@
+
+Fuzzing session completed: starbleed_2024-01-07T18-03-16.671963
+index_start: 1, index_end: None, openocd_port: 6666, openocd_bus_port: None
+Runtime: 19:46:56.909723
+Test Summary: 2097152 tests ran.
+PASSED: 2097152 test cases.
+
+
+
+real	1186m57,211s
+user	352m42,656s
+sys	135m33,361s

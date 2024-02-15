@@ -1,0 +1,12 @@
+
+Fuzzing session completed: idcode_register_relevant_bits_2023-08-24T19-21-18.684859
+Runtime: 0:29:42.474559
+Test Summary: 65536 tests ran.
+PASSED: 65536 test cases.
+FAILED: 1 test cases:
+46494: idcode_request:[idcode_request.fuzzed_idcode_value:46493]
+
+
+real	29m42,762s
+user	9m44,057s
+sys	2m21,183s

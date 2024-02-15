@@ -1,0 +1,12 @@
+
+Fuzzing session completed: encrypted_readout_2023-09-07T12-19-56.363096
+index_start: 1, index_end: None, openocd_port: 6666, openocd_bus_port: None
+Runtime: 1 day, 13:14:57.978242
+Test Summary: 4238080 tests ran.
+PASSED: 4238080 test cases.
+
+
+
+real	2234m58,266s
+user	926m16,951s
+sys	151m4,625s

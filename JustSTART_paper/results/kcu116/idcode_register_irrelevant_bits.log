@@ -1,0 +1,10 @@
+
+Fuzzing session completed: idcode_register_irrelevant_bits_2023-08-24T18-52-08.944441
+Runtime: 0:29:09.448608
+Test Summary: 65536 tests ran.
+PASSED: 65536 test cases.
+
+
+real	29m9,736s
+user	9m22,724s
+sys	2m16,060s

@@ -1,0 +1,10 @@
+
+Fuzzing session completed: ctl0_register_reserved_bits_1_7_2023-08-29T23-11-27.687367
+Runtime: 0:03:20.543666
+Test Summary: 8192 tests ran.
+PASSED: 8192 test cases.
+
+
+real	3m20,830s
+user	0m59,339s
+sys	0m16,567s

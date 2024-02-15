@@ -1,0 +1,10 @@
+
+Fuzzing session completed: far_register_reserved_2023-08-30T18-23-30.972420
+Runtime: 0:00:00.834399
+Test Summary: 32 tests ran.
+PASSED: 32 test cases.
+
+
+real	0m1,139s
+user	0m0,506s
+sys	0m0,096s

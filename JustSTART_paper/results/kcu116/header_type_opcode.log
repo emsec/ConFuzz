@@ -1,0 +1,18 @@
+
+Fuzzing session completed: header_type_opcode_2023-08-31T12-18-04.507304
+Runtime: 0:00:00.730784
+Test Summary: 32 tests ran.
+PASSED: 32 test cases.
+FAILED: 7 test cases:
+21: header_type_opcode_request:[header_type_opcode_request.fuzzed_read_from_wbstar:20]
+22: header_type_opcode_request:[header_type_opcode_request.fuzzed_read_from_wbstar:21]
+23: header_type_opcode_request:[header_type_opcode_request.fuzzed_read_from_wbstar:22]
+24: header_type_opcode_request:[header_type_opcode_request.fuzzed_read_from_wbstar:23]
+25: header_type_opcode_request:[header_type_opcode_request.fuzzed_read_from_wbstar:24]
+26: header_type_opcode_request:[header_type_opcode_request.fuzzed_read_from_wbstar:25]
+27: header_type_opcode_request:[header_type_opcode_request.fuzzed_read_from_wbstar:26]
+
+
+real	0m1,024s
+user	0m0,400s
+sys	0m0,098s

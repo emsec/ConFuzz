@@ -1,0 +1,113 @@
+Counting test cases...
+2097152 test cases found
+
+test_cases_per_board: 139810, rest: 2
+board: 0, index_start: 1, index_end: 139811, openocd_port: 6666, openocd_bus_port: 3-1.3.4
+board: 1, index_start: 139811, index_end: 279621, openocd_port: 6667, openocd_bus_port: 3-1.4.3
+board: 2, index_start: 279621, index_end: 419430, openocd_port: 6668, openocd_bus_port: 3-1.2.4
+board: 3, index_start: 419431, index_end: 559240, openocd_port: 6669, openocd_bus_port: 3-1.3.3
+board: 4, index_start: 559241, index_end: 699050, openocd_port: 6670, openocd_bus_port: 3-1.4.2
+board: 5, index_start: 699051, index_end: 838860, openocd_port: 6671, openocd_bus_port: 3-1.1.4
+board: 6, index_start: 838861, index_end: 978670, openocd_port: 6672, openocd_bus_port: 3-1.2.3
+board: 7, index_start: 978671, index_end: 1118480, openocd_port: 6673, openocd_bus_port: 3-1.3.2
+board: 8, index_start: 1118481, index_end: 1258290, openocd_port: 6674, openocd_bus_port: 3-1.4.1
+board: 9, index_start: 1258291, index_end: 1398100, openocd_port: 6675, openocd_bus_port: 3-1.1.3
+board: 10, index_start: 1398101, index_end: 1537910, openocd_port: 6676, openocd_bus_port: 3-1.2.2
+board: 11, index_start: 1537911, index_end: 1677720, openocd_port: 6677, openocd_bus_port: 3-1.3.1
+board: 12, index_start: 1677721, index_end: 1817530, openocd_port: 6678, openocd_bus_port: 3-1.1.2
+board: 13, index_start: 1817531, index_end: 1957340, openocd_port: 6679, openocd_bus_port: 3-1.2.1
+board: 14, index_start: 1957341, index_end: 2097150, openocd_port: 6680, openocd_bus_port: 3-1.1.1
+
+Fuzzing session completed: cor1_register_reserved_2023-08-31T12-50-02.807912
+Runtime: 1:22:44.182410
+Test Summary: 139811 tests ran.
+PASSED: 139811 test cases.
+
+
+Fuzzing session completed: cor1_register_reserved_2023-08-31T12-50-02.808054
+Runtime: 1:22:53.933873
+Test Summary: 139810 tests ran.
+PASSED: 139810 test cases.
+
+
+Fuzzing session completed: cor1_register_reserved_2023-08-31T12-50-02.808114
+Runtime: 1:22:55.346167
+Test Summary: 139810 tests ran.
+PASSED: 139810 test cases.
+
+
+Fuzzing session completed: cor1_register_reserved_2023-08-31T12-50-02.807788
+Runtime: 1:22:56.024104
+Test Summary: 139811 tests ran.
+PASSED: 139811 test cases.
+
+
+Fuzzing session completed: cor1_register_reserved_2023-08-31T12-50-02.807991
+Runtime: 1:22:59.673062
+Test Summary: 139810 tests ran.
+PASSED: 139810 test cases.
+
+
+Fuzzing session completed: cor1_register_reserved_2023-08-31T12-50-02.813261
+Runtime: 1:23:27.771053
+Test Summary: 139810 tests ran.
+PASSED: 139810 test cases.
+
+
+Fuzzing session completed: cor1_register_reserved_2023-08-31T12-50-02.812452
+Runtime: 1:23:33.855268
+Test Summary: 139810 tests ran.
+PASSED: 139810 test cases.
+
+
+Fuzzing session completed: cor1_register_reserved_2023-08-31T12-50-02.812333
+Runtime: 1:23:35.550105
+Test Summary: 139810 tests ran.
+PASSED: 139810 test cases.
+
+
+Fuzzing session completed: cor1_register_reserved_2023-08-31T12-50-02.811799
+Runtime: 1:23:39.049928
+Test Summary: 139810 tests ran.
+PASSED: 139810 test cases.
+
+
+Fuzzing session completed: cor1_register_reserved_2023-08-31T12-50-02.812062
+Runtime: 1:23:45.036474
+Test Summary: 139810 tests ran.
+PASSED: 139810 test cases.
+
+
+Fuzzing session completed: cor1_register_reserved_2023-08-31T12-50-02.812056
+Runtime: 1:23:45.836541
+Test Summary: 139810 tests ran.
+PASSED: 139810 test cases.
+
+
+Fuzzing session completed: cor1_register_reserved_2023-08-31T12-50-02.812153
+Runtime: 1:23:46.880447
+Test Summary: 139810 tests ran.
+PASSED: 139810 test cases.
+
+
+Fuzzing session completed: cor1_register_reserved_2023-08-31T12-50-02.808311
+Runtime: 1:23:51.241853
+Test Summary: 139810 tests ran.
+PASSED: 139810 test cases.
+
+
+Fuzzing session completed: cor1_register_reserved_2023-08-31T12-50-02.809368
+Runtime: 1:23:54.060519
+Test Summary: 139810 tests ran.
+PASSED: 139810 test cases.
+
+
+Fuzzing session completed: cor1_register_reserved_2023-08-31T12-50-02.808274
+Runtime: 1:24:00.384203
+Test Summary: 139810 tests ran.
+PASSED: 139810 test cases.
+
+
+real	84m28,336s
+user	250m37,338s
+sys	14m5,076s

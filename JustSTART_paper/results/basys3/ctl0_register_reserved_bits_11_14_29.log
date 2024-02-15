@@ -1,0 +1,113 @@
+Counting test cases...
+262144 test cases found
+
+test_cases_per_board: 17476, rest: 4
+board: 0, index_start: 1, index_end: 17477, openocd_port: 6666, openocd_bus_port: 3-1.3.4
+board: 1, index_start: 17477, index_end: 34953, openocd_port: 6667, openocd_bus_port: 3-1.4.3
+board: 2, index_start: 34953, index_end: 52429, openocd_port: 6668, openocd_bus_port: 3-1.2.4
+board: 3, index_start: 52429, index_end: 69905, openocd_port: 6669, openocd_bus_port: 3-1.3.3
+board: 4, index_start: 69905, index_end: 87380, openocd_port: 6670, openocd_bus_port: 3-1.4.2
+board: 5, index_start: 87381, index_end: 104856, openocd_port: 6671, openocd_bus_port: 3-1.1.4
+board: 6, index_start: 104857, index_end: 122332, openocd_port: 6672, openocd_bus_port: 3-1.2.3
+board: 7, index_start: 122333, index_end: 139808, openocd_port: 6673, openocd_bus_port: 3-1.3.2
+board: 8, index_start: 139809, index_end: 157284, openocd_port: 6674, openocd_bus_port: 3-1.4.1
+board: 9, index_start: 157285, index_end: 174760, openocd_port: 6675, openocd_bus_port: 3-1.1.3
+board: 10, index_start: 174761, index_end: 192236, openocd_port: 6676, openocd_bus_port: 3-1.2.2
+board: 11, index_start: 192237, index_end: 209712, openocd_port: 6677, openocd_bus_port: 3-1.3.1
+board: 12, index_start: 209713, index_end: 227188, openocd_port: 6678, openocd_bus_port: 3-1.1.2
+board: 13, index_start: 227189, index_end: 244664, openocd_port: 6679, openocd_bus_port: 3-1.2.1
+board: 14, index_start: 244665, index_end: 262140, openocd_port: 6680, openocd_bus_port: 3-1.1.1
+
+Fuzzing session completed: ctl0_register_reserved_bits_11_14_29_2023-08-31T18-38-05.890981
+Runtime: 0:07:52.163327
+Test Summary: 17477 tests ran.
+PASSED: 17477 test cases.
+
+
+Fuzzing session completed: ctl0_register_reserved_bits_11_14_29_2023-08-31T18-38-05.891843
+Runtime: 0:07:53.208436
+Test Summary: 17476 tests ran.
+PASSED: 17476 test cases.
+
+
+Fuzzing session completed: ctl0_register_reserved_bits_11_14_29_2023-08-31T18-38-05.891645
+Runtime: 0:07:54.211571
+Test Summary: 17477 tests ran.
+PASSED: 17477 test cases.
+
+
+Fuzzing session completed: ctl0_register_reserved_bits_11_14_29_2023-08-31T18-38-05.891708
+Runtime: 0:07:54.901693
+Test Summary: 17477 tests ran.
+PASSED: 17477 test cases.
+
+
+Fuzzing session completed: ctl0_register_reserved_bits_11_14_29_2023-08-31T18-38-05.891518
+Runtime: 0:07:55.163515
+Test Summary: 17477 tests ran.
+PASSED: 17477 test cases.
+
+
+Fuzzing session completed: ctl0_register_reserved_bits_11_14_29_2023-08-31T18-38-05.896891
+Runtime: 0:07:58.385249
+Test Summary: 17476 tests ran.
+PASSED: 17476 test cases.
+
+
+Fuzzing session completed: ctl0_register_reserved_bits_11_14_29_2023-08-31T18-38-05.895591
+Runtime: 0:07:59.052705
+Test Summary: 17476 tests ran.
+PASSED: 17476 test cases.
+
+
+Fuzzing session completed: ctl0_register_reserved_bits_11_14_29_2023-08-31T18-38-05.895710
+Runtime: 0:07:59.726919
+Test Summary: 17476 tests ran.
+PASSED: 17476 test cases.
+
+
+Fuzzing session completed: ctl0_register_reserved_bits_11_14_29_2023-08-31T18-38-05.895333
+Runtime: 0:08:00.265130
+Test Summary: 17476 tests ran.
+PASSED: 17476 test cases.
+
+
+Fuzzing session completed: ctl0_register_reserved_bits_11_14_29_2023-08-31T18-38-05.895244
+Runtime: 0:08:00.748464
+Test Summary: 17476 tests ran.
+PASSED: 17476 test cases.
+
+
+Fuzzing session completed: ctl0_register_reserved_bits_11_14_29_2023-08-31T18-38-05.894891
+Runtime: 0:08:01.581938
+Test Summary: 17476 tests ran.
+PASSED: 17476 test cases.
+
+
+Fuzzing session completed: ctl0_register_reserved_bits_11_14_29_2023-08-31T18-38-05.894539
+Runtime: 0:08:03.002202
+Test Summary: 17476 tests ran.
+PASSED: 17476 test cases.
+
+
+Fuzzing session completed: ctl0_register_reserved_bits_11_14_29_2023-08-31T18-38-05.893632
+Runtime: 0:08:04.850131
+Test Summary: 17476 tests ran.
+PASSED: 17476 test cases.
+
+
+Fuzzing session completed: ctl0_register_reserved_bits_11_14_29_2023-08-31T18-38-05.891798
+Runtime: 0:08:04.988366
+Test Summary: 17476 tests ran.
+PASSED: 17476 test cases.
+
+
+Fuzzing session completed: ctl0_register_reserved_bits_11_14_29_2023-08-31T18-38-05.891709
+Runtime: 0:08:06.430806
+Test Summary: 17476 tests ran.
+PASSED: 17476 test cases.
+
+
+real	8m9,990s
+user	15m28,608s
+sys	0m41,099s

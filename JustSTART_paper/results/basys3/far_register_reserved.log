@@ -1,0 +1,113 @@
+Counting test cases...
+64 test cases found
+
+test_cases_per_board: 4, rest: 4
+board: 0, index_start: 1, index_end: 5, openocd_port: 6666, openocd_bus_port: 3-1.3.4
+board: 1, index_start: 5, index_end: 9, openocd_port: 6667, openocd_bus_port: 3-1.4.3
+board: 2, index_start: 9, index_end: 13, openocd_port: 6668, openocd_bus_port: 3-1.2.4
+board: 3, index_start: 13, index_end: 17, openocd_port: 6669, openocd_bus_port: 3-1.3.3
+board: 4, index_start: 17, index_end: 20, openocd_port: 6670, openocd_bus_port: 3-1.4.2
+board: 5, index_start: 21, index_end: 24, openocd_port: 6671, openocd_bus_port: 3-1.1.4
+board: 6, index_start: 25, index_end: 28, openocd_port: 6672, openocd_bus_port: 3-1.2.3
+board: 7, index_start: 29, index_end: 32, openocd_port: 6673, openocd_bus_port: 3-1.3.2
+board: 8, index_start: 33, index_end: 36, openocd_port: 6674, openocd_bus_port: 3-1.4.1
+board: 9, index_start: 37, index_end: 40, openocd_port: 6675, openocd_bus_port: 3-1.1.3
+board: 10, index_start: 41, index_end: 44, openocd_port: 6676, openocd_bus_port: 3-1.2.2
+board: 11, index_start: 45, index_end: 48, openocd_port: 6677, openocd_bus_port: 3-1.3.1
+board: 12, index_start: 49, index_end: 52, openocd_port: 6678, openocd_bus_port: 3-1.1.2
+board: 13, index_start: 53, index_end: 56, openocd_port: 6679, openocd_bus_port: 3-1.2.1
+board: 14, index_start: 57, index_end: 60, openocd_port: 6680, openocd_bus_port: 3-1.1.1
+
+Fuzzing session completed: far_register_reserved_2023-08-31T21-22-47.799762
+Runtime: 0:00:00.109274
+Test Summary: 4 tests ran.
+PASSED: 4 test cases.
+
+
+Fuzzing session completed: far_register_reserved_2023-08-31T21-22-47.799764
+Runtime: 0:00:00.111880
+Test Summary: 4 tests ran.
+PASSED: 4 test cases.
+
+
+Fuzzing session completed: far_register_reserved_2023-08-31T21-22-47.803907
+Runtime: 0:00:00.109947
+Test Summary: 4 tests ran.
+PASSED: 4 test cases.
+
+
+Fuzzing session completed: far_register_reserved_2023-08-31T21-22-47.799964
+Runtime: 0:00:00.109833
+Test Summary: 4 tests ran.
+PASSED: 4 test cases.
+
+
+Fuzzing session completed: far_register_reserved_2023-08-31T21-22-47.799548
+Runtime: 0:00:00.132005
+Test Summary: 5 tests ran.
+PASSED: 5 test cases.
+
+
+Fuzzing session completed: far_register_reserved_2023-08-31T21-22-47.803293
+Runtime: 0:00:00.103077
+Test Summary: 4 tests ran.
+PASSED: 4 test cases.
+
+
+Fuzzing session completed: far_register_reserved_2023-08-31T21-22-47.799954
+Runtime: 0:00:00.107080
+Test Summary: 4 tests ran.
+PASSED: 4 test cases.
+
+
+Fuzzing session completed: far_register_reserved_2023-08-31T21-22-47.803443
+Runtime: 0:00:00.103049
+Test Summary: 4 tests ran.
+PASSED: 4 test cases.
+
+
+Fuzzing session completed: far_register_reserved_2023-08-31T21-22-47.802670
+Runtime: 0:00:00.103956
+Test Summary: 4 tests ran.
+PASSED: 4 test cases.
+
+
+Fuzzing session completed: far_register_reserved_2023-08-31T21-22-47.799709
+Runtime: 0:00:00.131748
+Test Summary: 5 tests ran.
+PASSED: 5 test cases.
+
+
+Fuzzing session completed: far_register_reserved_2023-08-31T21-22-47.802595
+Runtime: 0:00:00.110927
+Test Summary: 4 tests ran.
+PASSED: 4 test cases.
+
+
+Fuzzing session completed: far_register_reserved_2023-08-31T21-22-47.802577
+Runtime: 0:00:00.106691
+Test Summary: 4 tests ran.
+PASSED: 4 test cases.
+
+
+Fuzzing session completed: far_register_reserved_2023-08-31T21-22-47.799599
+Runtime: 0:00:00.137810
+Test Summary: 5 tests ran.
+PASSED: 5 test cases.
+
+
+Fuzzing session completed: far_register_reserved_2023-08-31T21-22-47.803413
+Runtime: 0:00:00.105529
+Test Summary: 4 tests ran.
+PASSED: 4 test cases.
+
+
+Fuzzing session completed: far_register_reserved_2023-08-31T21-22-47.799551
+Runtime: 0:00:00.128118
+Test Summary: 5 tests ran.
+PASSED: 5 test cases.
+
+
+real	0m0,757s
+user	0m1,010s
+sys	0m0,199s

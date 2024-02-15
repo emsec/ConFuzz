@@ -1,0 +1,10 @@
+
+Fuzzing session completed: cmd_register_irrelevant_bits_2023-08-24T01-45-36.569518
+Runtime: 1:50:39.433702
+Test Summary: 270335 tests ran.
+PASSED: 270335 test cases.
+
+
+real	110m39,719s
+user	32m9,158s
+sys	9m21,691s

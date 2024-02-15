@@ -1,0 +1,126 @@
+Counting test cases...
+147470 test cases found
+
+test_cases_per_board: 9831, rest: 5
+board: 0, index_start: 1, index_end: 9832, openocd_port: 6666, openocd_bus_port: 3-1.3.4
+board: 1, index_start: 9832, index_end: 19663, openocd_port: 6667, openocd_bus_port: 3-1.4.3
+board: 2, index_start: 19663, index_end: 29494, openocd_port: 6668, openocd_bus_port: 3-1.2.4
+board: 3, index_start: 29494, index_end: 39325, openocd_port: 6669, openocd_bus_port: 3-1.3.3
+board: 4, index_start: 39325, index_end: 49156, openocd_port: 6670, openocd_bus_port: 3-1.4.2
+board: 5, index_start: 49156, index_end: 58986, openocd_port: 6671, openocd_bus_port: 3-1.1.4
+board: 6, index_start: 58987, index_end: 68817, openocd_port: 6672, openocd_bus_port: 3-1.2.3
+board: 7, index_start: 68818, index_end: 78648, openocd_port: 6673, openocd_bus_port: 3-1.3.2
+board: 8, index_start: 78649, index_end: 88479, openocd_port: 6674, openocd_bus_port: 3-1.4.1
+board: 9, index_start: 88480, index_end: 98310, openocd_port: 6675, openocd_bus_port: 3-1.1.3
+board: 10, index_start: 98311, index_end: 108141, openocd_port: 6676, openocd_bus_port: 3-1.2.2
+board: 11, index_start: 108142, index_end: 117972, openocd_port: 6677, openocd_bus_port: 3-1.3.1
+board: 12, index_start: 117973, index_end: 127803, openocd_port: 6678, openocd_bus_port: 3-1.1.2
+board: 13, index_start: 127804, index_end: 137634, openocd_port: 6679, openocd_bus_port: 3-1.2.1
+board: 14, index_start: 137635, index_end: 147465, openocd_port: 6680, openocd_bus_port: 3-1.1.1
+
+Fuzzing session completed: unknown_register_23_2023-09-01T09-04-10.794543
+Runtime: 0:04:36.615518
+Test Summary: 9832 tests ran.
+PASSED: 9832 test cases.
+
+
+Fuzzing session completed: unknown_register_23_2023-09-01T09-04-10.794459
+Runtime: 0:04:36.265873
+Test Summary: 9832 tests ran.
+PASSED: 9832 test cases.
+
+
+Fuzzing session completed: unknown_register_23_2023-09-01T09-04-10.794788
+Runtime: 0:04:37.390939
+Test Summary: 9832 tests ran.
+PASSED: 9832 test cases.
+
+
+Fuzzing session completed: unknown_register_23_2023-09-01T09-04-10.794459
+Runtime: 0:04:37.559533
+Test Summary: 9832 tests ran.
+PASSED: 9832 test cases.
+
+
+Fuzzing session completed: unknown_register_23_2023-09-01T09-04-10.794440
+Runtime: 0:04:38.032926
+Test Summary: 9832 tests ran.
+PASSED: 9832 test cases.
+FAILED: 12 test cases:
+1: unknown_register_23_request:[unknown_register_23_request.fuzzed_unknown_register_23_value:0]
+2: unknown_register_23_request:[unknown_register_23_request.fuzzed_unknown_register_23_value:1]
+3: unknown_register_23_request:[unknown_register_23_request.fuzzed_unknown_register_23_value:2]
+4: unknown_register_23_request:[unknown_register_23_request.fuzzed_unknown_register_23_value:3]
+5: unknown_register_23_request:[unknown_register_23_request.fuzzed_unknown_register_23_value:4]
+6: unknown_register_23_request:[unknown_register_23_request.fuzzed_unknown_register_23_value:5]
+7: unknown_register_23_request:[unknown_register_23_request.fuzzed_unknown_register_23_value:6]
+8: unknown_register_23_request:[unknown_register_23_request.fuzzed_unknown_register_23_value:7]
+9: unknown_register_23_request:[unknown_register_23_request.fuzzed_unknown_register_23_value:8]
+11: unknown_register_23_request:[unknown_register_23_request.fuzzed_unknown_register_23_value:10]
+13: unknown_register_23_request:[unknown_register_23_request.fuzzed_unknown_register_23_value:12]
+15: unknown_register_23_request:[unknown_register_23_request.fuzzed_unknown_register_23_value:14]
+
+
+Fuzzing session completed: unknown_register_23_2023-09-01T09-04-10.798659
+Runtime: 0:04:40.320163
+Test Summary: 9831 tests ran.
+PASSED: 9831 test cases.
+
+
+Fuzzing session completed: unknown_register_23_2023-09-01T09-04-10.798882
+Runtime: 0:04:40.393401
+Test Summary: 9831 tests ran.
+PASSED: 9831 test cases.
+
+
+Fuzzing session completed: unknown_register_23_2023-09-01T09-04-10.798267
+Runtime: 0:04:40.798865
+Test Summary: 9831 tests ran.
+PASSED: 9831 test cases.
+
+
+Fuzzing session completed: unknown_register_23_2023-09-01T09-04-10.798285
+Runtime: 0:04:41.342237
+Test Summary: 9831 tests ran.
+PASSED: 9831 test cases.
+
+
+Fuzzing session completed: unknown_register_23_2023-09-01T09-04-10.798215
+Runtime: 0:04:41.597189
+Test Summary: 9831 tests ran.
+PASSED: 9831 test cases.
+
+
+Fuzzing session completed: unknown_register_23_2023-09-01T09-04-10.797503
+Runtime: 0:04:42.839663
+Test Summary: 9831 tests ran.
+PASSED: 9831 test cases.
+
+
+Fuzzing session completed: unknown_register_23_2023-09-01T09-04-10.794751
+Runtime: 0:04:43.380132
+Test Summary: 9831 tests ran.
+PASSED: 9831 test cases.
+
+
+Fuzzing session completed: unknown_register_23_2023-09-01T09-04-10.797487
+Runtime: 0:04:43.729642
+Test Summary: 9831 tests ran.
+PASSED: 9831 test cases.
+
+
+Fuzzing session completed: unknown_register_23_2023-09-01T09-04-10.794662
+Runtime: 0:04:44.252709
+Test Summary: 9831 tests ran.
+PASSED: 9831 test cases.
+
+
+Fuzzing session completed: unknown_register_23_2023-09-01T09-04-10.794746
+Runtime: 0:04:44.864061
+Test Summary: 9831 tests ran.
+PASSED: 9831 test cases.
+
+
+real	4m46,974s
+user	9m46,530s
+sys	0m27,477s

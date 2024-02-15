@@ -1,0 +1,21 @@
+
+Fuzzing session completed: far_register_block_type_2023-09-06T09-47-55.897823
+index_start: 1, index_end: None, openocd_port: 6666, openocd_bus_port: None
+Runtime: 0:00:00.230547
+Test Summary: 8 tests ran.
+PASSED: 8 test cases.
+FAILED: 8 test cases:
+1: far_request:[far_request.fuzzed_far_value:0]
+2: far_request:[far_request.fuzzed_far_value:1]
+3: far_request:[far_request.fuzzed_far_value:2]
+4: far_request:[far_request.fuzzed_far_value:3]
+5: far_request:[far_request.fuzzed_far_value:4]
+6: far_request:[far_request.fuzzed_far_value:5]
+7: far_request:[far_request.fuzzed_far_value:6]
+8: far_request:[far_request.fuzzed_far_value:7]
+
+
+
+real	0m0,536s
+user	0m0,298s
+sys	0m0,061s

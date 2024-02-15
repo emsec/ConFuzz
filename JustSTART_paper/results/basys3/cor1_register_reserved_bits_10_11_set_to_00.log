@@ -1,0 +1,113 @@
+Counting test cases...
+128 test cases found
+
+test_cases_per_board: 8, rest: 8
+board: 0, index_start: 1, index_end: 9, openocd_port: 6666, openocd_bus_port: 3-1.2.1
+board: 1, index_start: 9, index_end: 17, openocd_port: 6667, openocd_bus_port: 3-1.3.4
+board: 2, index_start: 17, index_end: 25, openocd_port: 6668, openocd_bus_port: 3-1.4.3
+board: 3, index_start: 25, index_end: 33, openocd_port: 6669, openocd_bus_port: 3-1.3.3
+board: 4, index_start: 33, index_end: 41, openocd_port: 6670, openocd_bus_port: 3-1.4.2
+board: 5, index_start: 41, index_end: 49, openocd_port: 6671, openocd_bus_port: 3-1.1.4
+board: 6, index_start: 49, index_end: 57, openocd_port: 6672, openocd_bus_port: 3-1.2.4
+board: 7, index_start: 57, index_end: 65, openocd_port: 6673, openocd_bus_port: 3-1.3.2
+board: 8, index_start: 65, index_end: 72, openocd_port: 6674, openocd_bus_port: 3-1.4.1
+board: 9, index_start: 73, index_end: 80, openocd_port: 6675, openocd_bus_port: 3-1.1.3
+board: 10, index_start: 81, index_end: 88, openocd_port: 6676, openocd_bus_port: 3-1.2.3
+board: 11, index_start: 89, index_end: 96, openocd_port: 6677, openocd_bus_port: 3-1.3.1
+board: 12, index_start: 97, index_end: 104, openocd_port: 6678, openocd_bus_port: 3-1.1.2
+board: 13, index_start: 105, index_end: 112, openocd_port: 6679, openocd_bus_port: 3-1.2.2
+board: 14, index_start: 113, index_end: 120, openocd_port: 6680, openocd_bus_port: 3-1.1.1
+
+Fuzzing session completed: cor1_register_reserved_bits_10_11_set_to_00_2023-09-01T12-35-56.753768
+Runtime: 0:00:00.200166
+Test Summary: 8 tests ran.
+PASSED: 8 test cases.
+
+
+Fuzzing session completed: cor1_register_reserved_bits_10_11_set_to_00_2023-09-01T12-35-56.752457
+Runtime: 0:00:00.202229
+Test Summary: 8 tests ran.
+PASSED: 8 test cases.
+
+
+Fuzzing session completed: cor1_register_reserved_bits_10_11_set_to_00_2023-09-01T12-35-56.748704
+Runtime: 0:00:00.242117
+Test Summary: 9 tests ran.
+PASSED: 9 test cases.
+
+
+Fuzzing session completed: cor1_register_reserved_bits_10_11_set_to_00_2023-09-01T12-35-56.753153
+Runtime: 0:00:00.202530
+Test Summary: 8 tests ran.
+PASSED: 8 test cases.
+
+
+Fuzzing session completed: cor1_register_reserved_bits_10_11_set_to_00_2023-09-01T12-35-56.752431
+Runtime: 0:00:00.206616
+Test Summary: 8 tests ran.
+PASSED: 8 test cases.
+
+
+Fuzzing session completed: cor1_register_reserved_bits_10_11_set_to_00_2023-09-01T12-35-56.748937
+Runtime: 0:00:00.231321
+Test Summary: 9 tests ran.
+PASSED: 9 test cases.
+
+
+Fuzzing session completed: cor1_register_reserved_bits_10_11_set_to_00_2023-09-01T12-35-56.751685
+Runtime: 0:00:00.207829
+Test Summary: 8 tests ran.
+PASSED: 8 test cases.
+
+
+Fuzzing session completed: cor1_register_reserved_bits_10_11_set_to_00_2023-09-01T12-35-56.752084
+Runtime: 0:00:00.204290
+Test Summary: 8 tests ran.
+PASSED: 8 test cases.
+
+
+Fuzzing session completed: cor1_register_reserved_bits_10_11_set_to_00_2023-09-01T12-35-56.752326
+Runtime: 0:00:00.206748
+Test Summary: 8 tests ran.
+PASSED: 8 test cases.
+
+
+Fuzzing session completed: cor1_register_reserved_bits_10_11_set_to_00_2023-09-01T12-35-56.748693
+Runtime: 0:00:00.237284
+Test Summary: 9 tests ran.
+PASSED: 9 test cases.
+
+
+Fuzzing session completed: cor1_register_reserved_bits_10_11_set_to_00_2023-09-01T12-35-56.748687
+Runtime: 0:00:00.231617
+Test Summary: 9 tests ran.
+PASSED: 9 test cases.
+
+
+Fuzzing session completed: cor1_register_reserved_bits_10_11_set_to_00_2023-09-01T12-35-56.748765
+Runtime: 0:00:00.226217
+Test Summary: 9 tests ran.
+PASSED: 9 test cases.
+
+
+Fuzzing session completed: cor1_register_reserved_bits_10_11_set_to_00_2023-09-01T12-35-56.748983
+Runtime: 0:00:00.229004
+Test Summary: 9 tests ran.
+PASSED: 9 test cases.
+
+
+Fuzzing session completed: cor1_register_reserved_bits_10_11_set_to_00_2023-09-01T12-35-56.749200
+Runtime: 0:00:00.226980
+Test Summary: 9 tests ran.
+PASSED: 9 test cases.
+
+
+Fuzzing session completed: cor1_register_reserved_bits_10_11_set_to_00_2023-09-01T12-35-56.749071
+Runtime: 0:00:00.226691
+Test Summary: 9 tests ran.
+PASSED: 9 test cases.
+
+
+real	0m0,864s
+user	0m1,080s
+sys	0m0,258s

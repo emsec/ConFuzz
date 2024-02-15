@@ -1,0 +1,10 @@
+
+Fuzzing session completed: unknown_register_25_first_four_bits_2023-09-01T00-33-50.330614
+Runtime: 3:27:56.211810
+Test Summary: 524287 tests ran.
+PASSED: 524287 test cases.
+
+
+real	207m56,500s
+user	56m35,858s
+sys	17m56,082s

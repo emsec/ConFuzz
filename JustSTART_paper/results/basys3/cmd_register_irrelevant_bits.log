@@ -1,0 +1,113 @@
+Counting test cases...
+270335 test cases found
+
+test_cases_per_board: 18022, rest: 5
+board: 0, index_start: 1, index_end: 18023, openocd_port: 6666, openocd_bus_port: 3-1.3.4
+board: 1, index_start: 18023, index_end: 36045, openocd_port: 6667, openocd_bus_port: 3-1.4.3
+board: 2, index_start: 36045, index_end: 54067, openocd_port: 6668, openocd_bus_port: 3-1.2.4
+board: 3, index_start: 54067, index_end: 72089, openocd_port: 6669, openocd_bus_port: 3-1.3.3
+board: 4, index_start: 72089, index_end: 90111, openocd_port: 6670, openocd_bus_port: 3-1.4.2
+board: 5, index_start: 90111, index_end: 108132, openocd_port: 6671, openocd_bus_port: 3-1.1.4
+board: 6, index_start: 108133, index_end: 126154, openocd_port: 6672, openocd_bus_port: 3-1.2.3
+board: 7, index_start: 126155, index_end: 144176, openocd_port: 6673, openocd_bus_port: 3-1.3.2
+board: 8, index_start: 144177, index_end: 162198, openocd_port: 6674, openocd_bus_port: 3-1.4.1
+board: 9, index_start: 162199, index_end: 180220, openocd_port: 6675, openocd_bus_port: 3-1.1.3
+board: 10, index_start: 180221, index_end: 198242, openocd_port: 6676, openocd_bus_port: 3-1.2.2
+board: 11, index_start: 198243, index_end: 216264, openocd_port: 6677, openocd_bus_port: 3-1.3.1
+board: 12, index_start: 216265, index_end: 234286, openocd_port: 6678, openocd_bus_port: 3-1.1.2
+board: 13, index_start: 234287, index_end: 252308, openocd_port: 6679, openocd_bus_port: 3-1.2.1
+board: 14, index_start: 252309, index_end: 270330, openocd_port: 6680, openocd_bus_port: 3-1.1.1
+
+Fuzzing session completed: cmd_register_irrelevant_bits_2023-08-29T09-10-59.601415
+Runtime: 0:08:07.686876
+Test Summary: 18023 tests ran.
+PASSED: 18023 test cases.
+
+
+Fuzzing session completed: cmd_register_irrelevant_bits_2023-08-29T09-10-59.601591
+Runtime: 0:08:08.810518
+Test Summary: 18023 tests ran.
+PASSED: 18023 test cases.
+
+
+Fuzzing session completed: cmd_register_irrelevant_bits_2023-08-29T09-10-59.601619
+Runtime: 0:08:09.099360
+Test Summary: 18023 tests ran.
+PASSED: 18023 test cases.
+
+
+Fuzzing session completed: cmd_register_irrelevant_bits_2023-08-29T09-10-59.601563
+Runtime: 0:08:09.814271
+Test Summary: 18023 tests ran.
+PASSED: 18023 test cases.
+
+
+Fuzzing session completed: cmd_register_irrelevant_bits_2023-08-29T09-10-59.601369
+Runtime: 0:08:11.274040
+Test Summary: 18023 tests ran.
+PASSED: 18023 test cases.
+
+
+Fuzzing session completed: cmd_register_irrelevant_bits_2023-08-29T09-10-59.605454
+Runtime: 0:08:12.694050
+Test Summary: 18022 tests ran.
+PASSED: 18022 test cases.
+
+
+Fuzzing session completed: cmd_register_irrelevant_bits_2023-08-29T09-10-59.605701
+Runtime: 0:08:13.913411
+Test Summary: 18022 tests ran.
+PASSED: 18022 test cases.
+
+
+Fuzzing session completed: cmd_register_irrelevant_bits_2023-08-29T09-10-59.605332
+Runtime: 0:08:14.505538
+Test Summary: 18022 tests ran.
+PASSED: 18022 test cases.
+
+
+Fuzzing session completed: cmd_register_irrelevant_bits_2023-08-29T09-10-59.605189
+Runtime: 0:08:16.489599
+Test Summary: 18022 tests ran.
+PASSED: 18022 test cases.
+
+
+Fuzzing session completed: cmd_register_irrelevant_bits_2023-08-29T09-10-59.605191
+Runtime: 0:08:16.988841
+Test Summary: 18022 tests ran.
+PASSED: 18022 test cases.
+
+
+Fuzzing session completed: cmd_register_irrelevant_bits_2023-08-29T09-10-59.605145
+Runtime: 0:08:17.570708
+Test Summary: 18022 tests ran.
+PASSED: 18022 test cases.
+
+
+Fuzzing session completed: cmd_register_irrelevant_bits_2023-08-29T09-10-59.604401
+Runtime: 0:08:18.340202
+Test Summary: 18022 tests ran.
+PASSED: 18022 test cases.
+
+
+Fuzzing session completed: cmd_register_irrelevant_bits_2023-08-29T09-10-59.601767
+Runtime: 0:08:20.081907
+Test Summary: 18022 tests ran.
+PASSED: 18022 test cases.
+
+
+Fuzzing session completed: cmd_register_irrelevant_bits_2023-08-29T09-10-59.601615
+Runtime: 0:08:20.545410
+Test Summary: 18022 tests ran.
+PASSED: 18022 test cases.
+
+
+Fuzzing session completed: cmd_register_irrelevant_bits_2023-08-29T09-10-59.601737
+Runtime: 0:08:21.146655
+Test Summary: 18022 tests ran.
+PASSED: 18022 test cases.
+
+
+real	8m24,465s
+user	15m51,127s
+sys	0m42,213s

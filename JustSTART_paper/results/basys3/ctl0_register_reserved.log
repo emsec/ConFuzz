@@ -1,0 +1,113 @@
+Counting test cases...
+1048576 test cases found
+
+test_cases_per_board: 69905, rest: 1
+board: 0, index_start: 1, index_end: 69906, openocd_port: 6666, openocd_bus_port: 3-1.3.4
+board: 1, index_start: 69906, index_end: 139810, openocd_port: 6667, openocd_bus_port: 3-1.4.3
+board: 2, index_start: 139811, index_end: 209715, openocd_port: 6668, openocd_bus_port: 3-1.2.4
+board: 3, index_start: 209716, index_end: 279620, openocd_port: 6669, openocd_bus_port: 3-1.3.3
+board: 4, index_start: 279621, index_end: 349525, openocd_port: 6670, openocd_bus_port: 3-1.4.2
+board: 5, index_start: 349526, index_end: 419430, openocd_port: 6671, openocd_bus_port: 3-1.1.4
+board: 6, index_start: 419431, index_end: 489335, openocd_port: 6672, openocd_bus_port: 3-1.2.3
+board: 7, index_start: 489336, index_end: 559240, openocd_port: 6673, openocd_bus_port: 3-1.3.2
+board: 8, index_start: 559241, index_end: 629145, openocd_port: 6674, openocd_bus_port: 3-1.4.1
+board: 9, index_start: 629146, index_end: 699050, openocd_port: 6675, openocd_bus_port: 3-1.1.3
+board: 10, index_start: 699051, index_end: 768955, openocd_port: 6676, openocd_bus_port: 3-1.2.2
+board: 11, index_start: 768956, index_end: 838860, openocd_port: 6677, openocd_bus_port: 3-1.3.1
+board: 12, index_start: 838861, index_end: 908765, openocd_port: 6678, openocd_bus_port: 3-1.1.2
+board: 13, index_start: 908766, index_end: 978670, openocd_port: 6679, openocd_bus_port: 3-1.2.1
+board: 14, index_start: 978671, index_end: 1048575, openocd_port: 6680, openocd_bus_port: 3-1.1.1
+
+Fuzzing session completed: ctl0_register_reserved_2023-08-31T12-07-33.440835
+Runtime: 0:41:25.339232
+Test Summary: 69905 tests ran.
+PASSED: 69905 test cases.
+
+
+Fuzzing session completed: ctl0_register_reserved_2023-08-31T12-07-33.441145
+Runtime: 0:41:26.915257
+Test Summary: 69905 tests ran.
+PASSED: 69905 test cases.
+
+
+Fuzzing session completed: ctl0_register_reserved_2023-08-31T12-07-33.441731
+Runtime: 0:41:31.232244
+Test Summary: 69905 tests ran.
+PASSED: 69905 test cases.
+
+
+Fuzzing session completed: ctl0_register_reserved_2023-08-31T12-07-33.440971
+Runtime: 0:41:31.911168
+Test Summary: 69905 tests ran.
+PASSED: 69905 test cases.
+
+
+Fuzzing session completed: ctl0_register_reserved_2023-08-31T12-07-33.440803
+Runtime: 0:41:32.598607
+Test Summary: 69906 tests ran.
+PASSED: 69906 test cases.
+
+
+Fuzzing session completed: ctl0_register_reserved_2023-08-31T12-07-33.444776
+Runtime: 0:41:44.509403
+Test Summary: 69905 tests ran.
+PASSED: 69905 test cases.
+
+
+Fuzzing session completed: ctl0_register_reserved_2023-08-31T12-07-33.444798
+Runtime: 0:41:47.952796
+Test Summary: 69905 tests ran.
+PASSED: 69905 test cases.
+
+
+Fuzzing session completed: ctl0_register_reserved_2023-08-31T12-07-33.444851
+Runtime: 0:41:48.772164
+Test Summary: 69905 tests ran.
+PASSED: 69905 test cases.
+
+
+Fuzzing session completed: ctl0_register_reserved_2023-08-31T12-07-33.444531
+Runtime: 0:41:50.466055
+Test Summary: 69905 tests ran.
+PASSED: 69905 test cases.
+
+
+Fuzzing session completed: ctl0_register_reserved_2023-08-31T12-07-33.444539
+Runtime: 0:41:52.430617
+Test Summary: 69905 tests ran.
+PASSED: 69905 test cases.
+
+
+Fuzzing session completed: ctl0_register_reserved_2023-08-31T12-07-33.444537
+Runtime: 0:41:55.327854
+Test Summary: 69905 tests ran.
+PASSED: 69905 test cases.
+
+
+Fuzzing session completed: ctl0_register_reserved_2023-08-31T12-07-33.444545
+Runtime: 0:41:56.337843
+Test Summary: 69905 tests ran.
+PASSED: 69905 test cases.
+
+
+Fuzzing session completed: ctl0_register_reserved_2023-08-31T12-07-33.441485
+Runtime: 0:41:56.826659
+Test Summary: 69905 tests ran.
+PASSED: 69905 test cases.
+
+
+Fuzzing session completed: ctl0_register_reserved_2023-08-31T12-07-33.441212
+Runtime: 0:42:00.746545
+Test Summary: 69905 tests ran.
+PASSED: 69905 test cases.
+
+
+Fuzzing session completed: ctl0_register_reserved_2023-08-31T12-07-33.441196
+Runtime: 0:42:00.999355
+Test Summary: 69905 tests ran.
+PASSED: 69905 test cases.
+
+
+real	42m9,674s
+user	125m10,500s
+sys	7m3,902s

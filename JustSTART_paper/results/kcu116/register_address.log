@@ -1,0 +1,10 @@
+
+Fuzzing session completed: register_address_2023-08-31T12-18-21.346545
+Runtime: 0:00:50.024630
+Test Summary: 2048 tests ran.
+PASSED: 2048 test cases.
+
+
+real	0m50,318s
+user	0m14,143s
+sys	0m4,326s

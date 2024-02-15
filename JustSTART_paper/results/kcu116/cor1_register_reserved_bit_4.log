@@ -1,0 +1,10 @@
+
+Fuzzing session completed: cor1_register_reserved_bit_4_2023-08-30T13-32-43.025194
+Runtime: 0:06:52.601537
+Test Summary: 16639 tests ran.
+PASSED: 16639 test cases.
+
+
+real	6m52,900s
+user	2m3,561s
+sys	0m34,084s

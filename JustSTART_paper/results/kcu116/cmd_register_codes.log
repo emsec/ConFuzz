@@ -1,0 +1,15 @@
+
+Fuzzing session completed: cmd_register_codes_2023-08-24T01-45-35.536009
+Runtime: 0:00:00.746310
+Test Summary: 32 tests ran.
+PASSED: 32 test cases.
+FAILED: 4 test cases:
+17: cmd_request:[cmd_request.fuzzed_cmd_value:16]
+19: cmd_request:[cmd_request.fuzzed_cmd_value:18]
+25: cmd_request:[cmd_request.fuzzed_cmd_value:24]
+29: cmd_request:[cmd_request.fuzzed_cmd_value:28]
+
+
+real	0m1,030s
+user	0m0,399s
+sys	0m0,090s

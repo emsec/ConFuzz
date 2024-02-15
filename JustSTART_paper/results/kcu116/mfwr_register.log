@@ -1,0 +1,10 @@
+
+Fuzzing session completed: mfwr_register_2023-08-24T11-48-38.349723
+Runtime: 3:34:24.600397
+Test Summary: 524287 tests ran.
+PASSED: 524287 test cases.
+
+
+real	214m24,897s
+user	62m24,722s
+sys	18m13,038s

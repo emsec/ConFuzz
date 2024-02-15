@@ -1,0 +1,113 @@
+Counting test cases...
+65536 test cases found
+
+test_cases_per_board: 4369, rest: 1
+board: 0, index_start: 1, index_end: 4370, openocd_port: 6666, openocd_bus_port: 3-1.3.4
+board: 1, index_start: 4370, index_end: 8738, openocd_port: 6667, openocd_bus_port: 3-1.4.3
+board: 2, index_start: 8739, index_end: 13107, openocd_port: 6668, openocd_bus_port: 3-1.2.4
+board: 3, index_start: 13108, index_end: 17476, openocd_port: 6669, openocd_bus_port: 3-1.3.3
+board: 4, index_start: 17477, index_end: 21845, openocd_port: 6670, openocd_bus_port: 3-1.4.2
+board: 5, index_start: 21846, index_end: 26214, openocd_port: 6671, openocd_bus_port: 3-1.1.4
+board: 6, index_start: 26215, index_end: 30583, openocd_port: 6672, openocd_bus_port: 3-1.2.3
+board: 7, index_start: 30584, index_end: 34952, openocd_port: 6673, openocd_bus_port: 3-1.3.2
+board: 8, index_start: 34953, index_end: 39321, openocd_port: 6674, openocd_bus_port: 3-1.4.1
+board: 9, index_start: 39322, index_end: 43690, openocd_port: 6675, openocd_bus_port: 3-1.1.3
+board: 10, index_start: 43691, index_end: 48059, openocd_port: 6676, openocd_bus_port: 3-1.2.2
+board: 11, index_start: 48060, index_end: 52428, openocd_port: 6677, openocd_bus_port: 3-1.3.1
+board: 12, index_start: 52429, index_end: 56797, openocd_port: 6678, openocd_bus_port: 3-1.1.2
+board: 13, index_start: 56798, index_end: 61166, openocd_port: 6679, openocd_bus_port: 3-1.2.1
+board: 14, index_start: 61167, index_end: 65535, openocd_port: 6680, openocd_bus_port: 3-1.1.1
+
+Fuzzing session completed: idcode_register_irrelevant_bits_2023-08-24T18-21-30.115767
+Runtime: 0:02:12.105623
+Test Summary: 4369 tests ran.
+PASSED: 4369 test cases.
+
+
+Fuzzing session completed: idcode_register_irrelevant_bits_2023-08-24T18-21-30.115956
+Runtime: 0:02:12.351007
+Test Summary: 4369 tests ran.
+PASSED: 4369 test cases.
+
+
+Fuzzing session completed: idcode_register_irrelevant_bits_2023-08-24T18-21-30.115761
+Runtime: 0:02:12.471235
+Test Summary: 4370 tests ran.
+PASSED: 4370 test cases.
+
+
+Fuzzing session completed: idcode_register_irrelevant_bits_2023-08-24T18-21-30.115853
+Runtime: 0:02:12.549253
+Test Summary: 4369 tests ran.
+PASSED: 4369 test cases.
+
+
+Fuzzing session completed: idcode_register_irrelevant_bits_2023-08-24T18-21-30.115810
+Runtime: 0:02:12.615021
+Test Summary: 4369 tests ran.
+PASSED: 4369 test cases.
+
+
+Fuzzing session completed: idcode_register_irrelevant_bits_2023-08-24T18-21-30.119893
+Runtime: 0:02:13.257878
+Test Summary: 4369 tests ran.
+PASSED: 4369 test cases.
+
+
+Fuzzing session completed: idcode_register_irrelevant_bits_2023-08-24T18-21-30.119908
+Runtime: 0:02:13.457432
+Test Summary: 4369 tests ran.
+PASSED: 4369 test cases.
+
+
+Fuzzing session completed: idcode_register_irrelevant_bits_2023-08-24T18-21-30.120173
+Runtime: 0:02:13.553374
+Test Summary: 4369 tests ran.
+PASSED: 4369 test cases.
+
+
+Fuzzing session completed: idcode_register_irrelevant_bits_2023-08-24T18-21-30.119580
+Runtime: 0:02:14.028753
+Test Summary: 4369 tests ran.
+PASSED: 4369 test cases.
+
+
+Fuzzing session completed: idcode_register_irrelevant_bits_2023-08-24T18-21-30.119453
+Runtime: 0:02:14.119346
+Test Summary: 4369 tests ran.
+PASSED: 4369 test cases.
+
+
+Fuzzing session completed: idcode_register_irrelevant_bits_2023-08-24T18-21-30.118824
+Runtime: 0:02:14.278169
+Test Summary: 4369 tests ran.
+PASSED: 4369 test cases.
+
+
+Fuzzing session completed: idcode_register_irrelevant_bits_2023-08-24T18-21-30.116172
+Runtime: 0:02:14.812249
+Test Summary: 4369 tests ran.
+PASSED: 4369 test cases.
+
+
+Fuzzing session completed: idcode_register_irrelevant_bits_2023-08-24T18-21-30.118821
+Runtime: 0:02:15.013220
+Test Summary: 4369 tests ran.
+PASSED: 4369 test cases.
+
+
+Fuzzing session completed: idcode_register_irrelevant_bits_2023-08-24T18-21-30.116019
+Runtime: 0:02:15.144598
+Test Summary: 4369 tests ran.
+PASSED: 4369 test cases.
+
+
+Fuzzing session completed: idcode_register_irrelevant_bits_2023-08-24T18-21-30.116061
+Runtime: 0:02:15.252465
+Test Summary: 4369 tests ran.
+PASSED: 4369 test cases.
+
+
+real	2m16,899s
+user	5m11,543s
+sys	0m12,032s

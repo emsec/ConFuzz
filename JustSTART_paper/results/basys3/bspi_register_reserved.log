@@ -1,0 +1,113 @@
+Counting test cases...
+64 test cases found
+
+test_cases_per_board: 4, rest: 4
+board: 0, index_start: 1, index_end: 5, openocd_port: 6666, openocd_bus_port: 3-1.3.4
+board: 1, index_start: 5, index_end: 9, openocd_port: 6667, openocd_bus_port: 3-1.4.3
+board: 2, index_start: 9, index_end: 13, openocd_port: 6668, openocd_bus_port: 3-1.2.4
+board: 3, index_start: 13, index_end: 17, openocd_port: 6669, openocd_bus_port: 3-1.3.3
+board: 4, index_start: 17, index_end: 20, openocd_port: 6670, openocd_bus_port: 3-1.4.2
+board: 5, index_start: 21, index_end: 24, openocd_port: 6671, openocd_bus_port: 3-1.1.4
+board: 6, index_start: 25, index_end: 28, openocd_port: 6672, openocd_bus_port: 3-1.2.3
+board: 7, index_start: 29, index_end: 32, openocd_port: 6673, openocd_bus_port: 3-1.3.2
+board: 8, index_start: 33, index_end: 36, openocd_port: 6674, openocd_bus_port: 3-1.4.1
+board: 9, index_start: 37, index_end: 40, openocd_port: 6675, openocd_bus_port: 3-1.1.3
+board: 10, index_start: 41, index_end: 44, openocd_port: 6676, openocd_bus_port: 3-1.2.2
+board: 11, index_start: 45, index_end: 48, openocd_port: 6677, openocd_bus_port: 3-1.3.1
+board: 12, index_start: 49, index_end: 52, openocd_port: 6678, openocd_bus_port: 3-1.1.2
+board: 13, index_start: 53, index_end: 56, openocd_port: 6679, openocd_bus_port: 3-1.2.1
+board: 14, index_start: 57, index_end: 60, openocd_port: 6680, openocd_bus_port: 3-1.1.1
+
+Fuzzing session completed: bspi_register_reserved_2023-08-24T11-47-17.258867
+Runtime: 0:00:00.095743
+Test Summary: 4 tests ran.
+PASSED: 4 test cases.
+
+
+Fuzzing session completed: bspi_register_reserved_2023-08-24T11-47-17.255746
+Runtime: 0:00:00.137236
+Test Summary: 5 tests ran.
+PASSED: 5 test cases.
+
+
+Fuzzing session completed: bspi_register_reserved_2023-08-24T11-47-17.260162
+Runtime: 0:00:00.100407
+Test Summary: 4 tests ran.
+PASSED: 4 test cases.
+
+
+Fuzzing session completed: bspi_register_reserved_2023-08-24T11-47-17.260078
+Runtime: 0:00:00.100131
+Test Summary: 4 tests ran.
+PASSED: 4 test cases.
+
+
+Fuzzing session completed: bspi_register_reserved_2023-08-24T11-47-17.255926
+Runtime: 0:00:00.096151
+Test Summary: 4 tests ran.
+PASSED: 4 test cases.
+
+
+Fuzzing session completed: bspi_register_reserved_2023-08-24T11-47-17.259358
+Runtime: 0:00:00.099199
+Test Summary: 4 tests ran.
+PASSED: 4 test cases.
+
+Fuzzing session completed: bspi_register_reserved_2023-08-24T11-47-17.259365
+Runtime: 0:00:00.093637
+Test Summary: 4 tests ran.
+PASSED: 4 test cases.
+
+
+
+Fuzzing session completed: bspi_register_reserved_2023-08-24T11-47-17.256138
+Runtime: 0:00:00.096786
+Test Summary: 4 tests ran.
+PASSED: 4 test cases.
+
+
+Fuzzing session completed: bspi_register_reserved_2023-08-24T11-47-17.259544
+Runtime: 0:00:00.096631
+Test Summary: 4 tests ran.
+PASSED: 4 test cases.
+
+
+Fuzzing session completed: bspi_register_reserved_2023-08-24T11-47-17.256046
+Runtime: 0:00:00.098449
+Test Summary: 4 tests ran.
+PASSED: 4 test cases.
+
+
+Fuzzing session completed: bspi_register_reserved_2023-08-24T11-47-17.260525
+Runtime: 0:00:00.101102
+Test Summary: 4 tests ran.
+PASSED: 4 test cases.
+
+
+Fuzzing session completed: bspi_register_reserved_2023-08-24T11-47-17.255960
+Runtime: 0:00:00.101700
+Test Summary: 4 tests ran.
+PASSED: 4 test cases.
+
+
+Fuzzing session completed: bspi_register_reserved_2023-08-24T11-47-17.255684
+Runtime: 0:00:00.123509
+Test Summary: 5 tests ran.
+PASSED: 5 test cases.
+
+
+Fuzzing session completed: bspi_register_reserved_2023-08-24T11-47-17.255838
+Runtime: 0:00:00.112044
+Test Summary: 5 tests ran.
+PASSED: 5 test cases.
+
+
+Fuzzing session completed: bspi_register_reserved_2023-08-24T11-47-17.255850
+Runtime: 0:00:00.114988
+Test Summary: 5 tests ran.
+PASSED: 5 test cases.
+
+
+real	0m0,750s
+user	0m0,872s
+sys	0m0,269s

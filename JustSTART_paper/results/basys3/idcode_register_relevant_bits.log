@@ -1,0 +1,115 @@
+Counting test cases...
+65536 test cases found
+
+test_cases_per_board: 4369, rest: 1
+board: 0, index_start: 1, index_end: 4370, openocd_port: 6666, openocd_bus_port: 3-1.3.4
+board: 1, index_start: 4370, index_end: 8738, openocd_port: 6667, openocd_bus_port: 3-1.4.3
+board: 2, index_start: 8739, index_end: 13107, openocd_port: 6668, openocd_bus_port: 3-1.2.4
+board: 3, index_start: 13108, index_end: 17476, openocd_port: 6669, openocd_bus_port: 3-1.3.3
+board: 4, index_start: 17477, index_end: 21845, openocd_port: 6670, openocd_bus_port: 3-1.4.2
+board: 5, index_start: 21846, index_end: 26214, openocd_port: 6671, openocd_bus_port: 3-1.1.4
+board: 6, index_start: 26215, index_end: 30583, openocd_port: 6672, openocd_bus_port: 3-1.2.3
+board: 7, index_start: 30584, index_end: 34952, openocd_port: 6673, openocd_bus_port: 3-1.3.2
+board: 8, index_start: 34953, index_end: 39321, openocd_port: 6674, openocd_bus_port: 3-1.4.1
+board: 9, index_start: 39322, index_end: 43690, openocd_port: 6675, openocd_bus_port: 3-1.1.3
+board: 10, index_start: 43691, index_end: 48059, openocd_port: 6676, openocd_bus_port: 3-1.2.2
+board: 11, index_start: 48060, index_end: 52428, openocd_port: 6677, openocd_bus_port: 3-1.3.1
+board: 12, index_start: 52429, index_end: 56797, openocd_port: 6678, openocd_bus_port: 3-1.1.2
+board: 13, index_start: 56798, index_end: 61166, openocd_port: 6679, openocd_bus_port: 3-1.2.1
+board: 14, index_start: 61167, index_end: 65535, openocd_port: 6680, openocd_bus_port: 3-1.1.1
+
+Fuzzing session completed: idcode_register_relevant_bits_2023-08-29T09-03-38.049015
+Runtime: 0:02:14.468303
+Test Summary: 4369 tests ran.
+PASSED: 4369 test cases.
+
+
+Fuzzing session completed: idcode_register_relevant_bits_2023-08-29T09-03-38.049223
+Runtime: 0:02:14.687088
+Test Summary: 4369 tests ran.
+PASSED: 4369 test cases.
+
+
+Fuzzing session completed: idcode_register_relevant_bits_2023-08-29T09-03-38.049040
+Runtime: 0:02:14.831055
+Test Summary: 4369 tests ran.
+PASSED: 4369 test cases.
+
+
+Fuzzing session completed: idcode_register_relevant_bits_2023-08-29T09-03-38.049098
+Runtime: 0:02:14.878668
+Test Summary: 4369 tests ran.
+PASSED: 4369 test cases.
+
+
+Fuzzing session completed: idcode_register_relevant_bits_2023-08-29T09-03-38.048974
+Runtime: 0:02:15.107319
+Test Summary: 4370 tests ran.
+PASSED: 4370 test cases.
+
+
+Fuzzing session completed: idcode_register_relevant_bits_2023-08-29T09-03-38.053077
+Runtime: 0:02:15.199190
+Test Summary: 4369 tests ran.
+PASSED: 4369 test cases.
+
+
+Fuzzing session completed: idcode_register_relevant_bits_2023-08-29T09-03-38.052894
+Runtime: 0:02:15.550202
+Test Summary: 4369 tests ran.
+PASSED: 4369 test cases.
+
+
+Fuzzing session completed: idcode_register_relevant_bits_2023-08-29T09-03-38.053002
+Runtime: 0:02:15.961505
+Test Summary: 4369 tests ran.
+PASSED: 4369 test cases.
+
+
+Fuzzing session completed: idcode_register_relevant_bits_2023-08-29T09-03-38.052458
+Runtime: 0:02:16.044082
+Test Summary: 4369 tests ran.
+PASSED: 4369 test cases.
+FAILED: 1 test cases:
+51667: idcode_request:[idcode_request.fuzzed_idcode_value:51666]
+
+
+Fuzzing session completed: idcode_register_relevant_bits_2023-08-29T09-03-38.052771
+Runtime: 0:02:16.124611
+Test Summary: 4369 tests ran.
+PASSED: 4369 test cases.
+
+
+Fuzzing session completed: idcode_register_relevant_bits_2023-08-29T09-03-38.052616
+Runtime: 0:02:16.728868
+Test Summary: 4369 tests ran.
+PASSED: 4369 test cases.
+
+
+Fuzzing session completed: idcode_register_relevant_bits_2023-08-29T09-03-38.052652
+Runtime: 0:02:16.814442
+Test Summary: 4369 tests ran.
+PASSED: 4369 test cases.
+
+
+Fuzzing session completed: idcode_register_relevant_bits_2023-08-29T09-03-38.049317
+Runtime: 0:02:17.009565
+Test Summary: 4369 tests ran.
+PASSED: 4369 test cases.
+
+
+Fuzzing session completed: idcode_register_relevant_bits_2023-08-29T09-03-38.049242
+Runtime: 0:02:17.164690
+Test Summary: 4369 tests ran.
+PASSED: 4369 test cases.
+
+
+Fuzzing session completed: idcode_register_relevant_bits_2023-08-29T09-03-38.049309
+Runtime: 0:02:17.272644
+Test Summary: 4369 tests ran.
+PASSED: 4369 test cases.
+
+
+real	2m18,942s
+user	5m15,338s
+sys	0m12,956s
