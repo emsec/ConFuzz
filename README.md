@@ -1,7 +1,7 @@
 # ConFuzz FPGA Configuration Engine Fuzzing Framework
 ConFuzz is an advanced FPGA configuration engine fuzzing and rapid prototyping framework based on [boofuzz](https://github.com/jtpereyda/boofuzz) and [OpenOCD](https://openocd.org/).
 
-The [/JustSTART_paper](./JustSTART_paper) folder contains the complete results related to our [paper](./JustSTART_paper/pdf/PAPER_PLACEHOLDER.pdf) about ConFuzz and the JustSTART attack (CVE-2023-20570).
+The [/JustSTART_paper](./JustSTART_paper) folder contains the complete results related to our [paper](./JustSTART_paper/pdf/JustSTART.pdf) about ConFuzz and the JustSTART attack (CVE-2023-20570).
 Further details about reproducing the results are in that folder's [README.md](./JustSTART_paper/README.md).
 
 
@@ -69,7 +69,7 @@ The implemented fuzzer uses a structure-aware mutator ❷ to generate modified t
 Then, each modified bitstream is handled by the hardware abstraction layer ❸ in order to program the FPGA and obtain information of the hardware state after configuration ([/src/connections.py](./src/connections.py) & [/src/monitors.py](./src/monitors.py)).
 Finally, the state is post-processed in an evaluator ❹, i.e., analyzed for crashes or deviated behavior (also in [/src/monitors.py](./src/monitors.py)), and optionally displayed in a user interface ❺ for manual inspection (the link to the [boofuzz](https://github.com/jtpereyda/boofuzz) web interface is shown after execution).
 
-Section 3 of our [paper](./JustSTART_paper/pdf/PAPER_PLACEHOLDER.pdf) describes this in depth, including several key challenges for FPGA configuration engine fuzzing and the system architecture, workflow, and fundamental components of ConFuzz. 
+Section 3 of our [paper](./JustSTART_paper/pdf/JustSTART.pdf) describes this in depth, including several key challenges for FPGA configuration engine fuzzing and the system architecture, workflow, and fundamental components of ConFuzz. 
 Further, Section 5 gives three examples of how to use the framework in different ways.
 These sections give a good introduction to working with ConFuzz.
 
@@ -134,9 +134,9 @@ However, minor modifications in this script are necessary depending on the hardw
 This is a small helper script to clean up the code base and keep the dependencies up to date.
 
 ### Adding and configuring fuzzers
-Section 3, 5, and especially Section 5.3 of our [paper](./JustSTART_paper/pdf/PAPER_PLACEHOLDER.pdf), are a helpful introduction to the fuzzing process based on ConFuzz.
+Section 3, 5, and especially Section 5.3 of our [paper](./JustSTART_paper/pdf/JustSTART.pdf), are a helpful introduction to the fuzzing process based on ConFuzz.
 In the following, we explain the implementation and configuration of a new fuzzer.
-Note that besides our [paper](./JustSTART_paper/pdf/PAPER_PLACEHOLDER.pdf), our [fuzzer implementations](./fuzzers/) and comprehensively documented source code can be reviewed as an addition to this guide.
+Note that besides our [paper](./JustSTART_paper/pdf/JustSTART.pdf), our [fuzzer implementations](./fuzzers/) and comprehensively documented source code can be reviewed as an addition to this guide.
 
 First, a function starting with `fuzz_` has to be added to the respective fuzzer file in [/fuzzers](./fuzzers/).
 
@@ -163,7 +163,7 @@ However, all arguments from the [boofuzz Session object](https://boofuzz.readthe
 
 #### Crash settings
 Next, crash settings (also called register settings) can be defined.
-The high-level functionality is described in the [paper](./JustSTART_paper/pdf/PAPER_PLACEHOLDER.pdf) and the [default_register_settings.ini](./register_settings/default_register_settings.ini) contains all available register settings and their explanation.
+The high-level functionality is described in the [paper](./JustSTART_paper/pdf/JustSTART.pdf) and the [default_register_settings.ini](./register_settings/default_register_settings.ini) contains all available register settings and their explanation.
 They can be omitted entirely, but usually, it is necessary to define custom register settings for each fuzzer.
 
 #### Target
@@ -224,9 +224,3 @@ To cite this work, please use the reference below:
 ```bibtex
 TODO
 ```
-
-
-
-# TODO
-- add final paper pdf and final paper paths
-- add CITATION.cff (and BibTeX in README)
