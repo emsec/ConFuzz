@@ -222,5 +222,12 @@ Please feel free to contact us using GitHub's [discussions](https://github.com/e
 To cite this work, please use the reference below:
 
 ```bibtex
-TODO
+@misc{ender2024juststart,
+      title={JustSTART: How to Find an RSA Authentication Bypass on Xilinx UltraScale(+) with Fuzzing}, 
+      author={Maik Ender and Felix Hahn and Marc Fyrbiak and Amir Moradi and Christof Paar},
+      year={2024},
+      eprint={2402.09845},
+      archivePrefix={arXiv},
+      primaryClass={cs.CR}
+}
 ```
