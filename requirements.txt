@@ -1,5 +1,5 @@
 black==24.2.0
-pipreqs==0.4.13 
+isort=5.13.2
 pycryptodome==3.20.0
 pyserial==3.5
 requests==2.31.0
