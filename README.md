@@ -222,12 +222,17 @@ Please feel free to contact us using GitHub's [discussions](https://github.com/e
 To cite this work, please use the reference below:
 
 ```bibtex
-@misc{ender2024juststart,
-      title={JustSTART: How to Find an RSA Authentication Bypass on Xilinx UltraScale(+) with Fuzzing}, 
-      author={Maik Ender and Felix Hahn and Marc Fyrbiak and Amir Moradi and Christof Paar},
-      year={2024},
-      eprint={2402.09845},
-      archivePrefix={arXiv},
-      primaryClass={cs.CR}
+@article{Ender_Hahn_Fyrbiak_Moradi_Paar_2024,
+    title={JustSTART: How to Find an RSA Authentication Bypass on Xilinx UltraScale(+) with Fuzzing},
+    volume={2024},
+    url={https://tches.iacr.org/index.php/TCHES/article/view/11435},
+    DOI={10.46586/tches.v2024.i2.426-450},
+    abstractNote={&amp;lt;p&amp;gt;Fuzzing is a well-established technique in the software domain to uncover bugs and vulnerabilities. Yet, applications of fuzzing for security vulnerabilities in hardware systems are scarce, as principal reasons are requirements for design information access, i.e., HDL source code. Moreover, observation of internal hardware state during runtime is typically an ineffective information source, as its documentation is often not publicly available. In addition, such observation during runtime is also inefficient due to bandwidth-limited analysis interfaces, i.e., JTAG, and minimal introspection of hardware-internal modules.&amp;lt;br&amp;gt;In this work, we investigate fuzzing for Xilinx 7-Series and UltraScale(+) FPGA configuration engines, the control plane governing the (secure) bitstream configuration within the FPGA. Our goal is to examine the effectiveness of fuzzing to analyze and document the opaque inner workings of FPGA configuration engines, with a primary emphasis on identifying security vulnerabilities. Using only the publicly available hardware chip and dispersed documentation, we first design and implement ConFuzz, an advanced FPGA configuration engine fuzzing and rapid prototyping framework. Based on our detailed understanding of the bitstream file format, we then systematically define 3 novel key fuzzing strategies for Xilinx FPGA configuration engines. Moreover, our strategies are executed through mutational structure-aware fuzzers and incorporate various novel custom-tailored, FPGA-specific optimizations to reduce search space. Our evaluation reveals previously undocumented behavior within the configuration engine, including critical findings such as system crashes leading to unresponsive states of the whole FPGA. In addition, our investigations not only lead to the rediscovery of the recent starbleed attack but also uncover a novel unpatchable vulnerability, denoted as JustSTART (CVE-2023-20570), capable of circumventing RSA authentication for Xilinx UltraScale(+). Note that we also discuss effective countermeasures by secure FPGA settings to prevent aforementioned attacks.&amp;lt;/p&amp;gt;},
+    number={2},
+    journal={IACR Transactions on Cryptographic Hardware and Embedded Systems},
+    author={Ender, Maik and Hahn, Felix and Fyrbiak, Marc and Moradi, Amir and Paar, Christof},
+    year={2024},
+    month={Mar.},
+    pages={426–450}
 }
 ```
