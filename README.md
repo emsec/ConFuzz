@@ -20,8 +20,8 @@ https://www.xilinx.com/products/boards-and-kits/ek-u1-kcu116-g.html (kcu116)
 https://opalkelly.com/products/xem8320/ (xem8320)
 
 ### Software
-Python 3.12.1  
-OpenOCD 0.12.0
+[Python 3.12.1](https://www.python.org/downloads/release/python-3121/)  
+[OpenOCD 0.12.0](https://sourceforge.net/projects/openocd/files/openocd/0.12.0/)
 
 
 
@@ -59,6 +59,7 @@ For example, the [playground fuzzer](./fuzzers/basys3/playground.py#L11) can be 
 ```bash
 python main_fuzzer.py -b basys3 -fn playground
 ```
+
 
 
 ## Usage & Documentation
