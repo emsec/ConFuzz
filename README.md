@@ -28,7 +28,7 @@ https://opalkelly.com/products/xem8320/ (xem8320)
 ## Getting started
 
 ### Installation
-Clone this repository and execute the following commands in the ConFuzz directory.
+Install Python and OpenOCD, clone this repository and execute the following commands in the ConFuzz directory.
 
 ```bash
 # Initialize our boofuzz fork as a submodule.
