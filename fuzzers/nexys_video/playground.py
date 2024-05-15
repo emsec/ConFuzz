@@ -83,7 +83,7 @@ def fuzz_playground(self, session_kwargs: dict = {}):
     session.fuzz(self._test_case_name)
 
 
-def fuzz_enc_playground(self, session_kwargs: dict = {}):
+def fuzz_enc_bitfile_playground(self, session_kwargs: dict = {}):
     """Fuzzer for manually fuzzing or testing stuff."""
 
     session = Session(**session_kwargs)
@@ -95,15 +95,11 @@ def fuzz_enc_playground(self, session_kwargs: dict = {}):
         },
         "register7": {
             "crash_if_differs_from_default": "no",
-            "crash_if_not_equal_to": "50 00 1D 0E",
-        },
-        "register16": {
-            "crash_if_differs_from_default": "no",
-            "crash_if_not_equal_to": "42 42 42 42",
+            "crash_if_not_equal_to": "70 00 1D 0E",
         },
         "register26": {
             "crash_if_differs_from_default": "no",
-            "crash_if_not_equal_to": "00 00 00 98",
+            "crash_if_not_equal_to": "00 00 01 C8",
         },
     }
 
@@ -118,62 +114,12 @@ def fuzz_enc_playground(self, session_kwargs: dict = {}):
     playground_request = Request(
         name="playground_request",
         children=(
-            BitstreamWord(
-                name="fuzzed_dummy_value",
-                static_bits=0x20000000,
+            FuzzedBitstream(
+                name="playground_bitstream",
+                file_name="write_fdri_bbram_test_key.bit",
                 fuzzing_mask=0x00000000,
-            ),
-            EncryptedSeries7Block(
-                name="encrypted_block",
-                children=(
-                    Type1WritePacket(name="write_to_wbstar", register_address=16),
-                    Static("wbstar_value", default_value=b"\x42\x42\x42\x42"),
-                ),
-                pad_child_data=True,
-                key_file_name="test_key.nky",
-            ),
-        ),
-    )
-
-    session.connect(playground_request)
-
-    session.fuzz(self._test_case_name)
-
-
-def fuzz_log_playground(self, session_kwargs: dict = {}):
-    """Fuzzer for manually fuzzing or testing stuff."""
-
-    session = Session(**session_kwargs)
-
-    custom_register_settings = {
-        "register16": {
-            "crash_if_differs_from_default": "yes",
-            "log_transmitted_if_crashed": "playground_request.fuzzed_wbstar_value",
-        },
-    }
-
-    session.add_target(
-        self._get_target(
-            session._fuzz_data_logger,
-            custom_register_settings=custom_register_settings,
-        )
-    )
-
-    playground_request = Request(
-        name="playground_request",
-        children=(
-            Type1WritePacket(name="write_to_mask", register_address=6),
-            Static(name="mask_value", default_value=b"\x00\x00\x04\x00"),
-            Type1WritePacket(name="write_to_ctl0", register_address=5),
-            Static(name="ctl0_value", default_value=b"\x00\x00\x04\x00"),
-            NOP(2),
-            Type1WritePacket(name="write_to_wbstar", register_address=16),
-            BitstreamWord(
-                name="fuzzed_wbstar_value",
-                static_bits=0x00000011,
-                fuzzing_mask=0xFC000000,
-            ),
-            NOP(2),
+                fuzzing_position=FuzzPosition(index_start=0, word_count=1),
+            )
         ),
     )
 

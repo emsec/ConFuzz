@@ -1,0 +1,4 @@
+Device xc7a200t;
+Key 0 fb0ed5a1ca4e5e797f35eae370fa889881f0d96e541fd54dff28b8fdcae9fbf8;
+Key StartCBC f1b69808f6c303f388a5353eece7ab1d;
+Key HMAC f3fb438bba84360afb468ad6512ee1e9bb810a5178f1e6ad140cb2b1d3bb64a1;

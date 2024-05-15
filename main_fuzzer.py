@@ -41,6 +41,8 @@ class MainFuzzer:
                 import fuzzers.kcu105 as fuzzers
             case "kcu116":
                 import fuzzers.kcu116 as fuzzers
+            case "nexys_video":
+                import fuzzers.nexys_video as fuzzers
             case "xem8320":
                 import fuzzers.xem8320 as fuzzers
 

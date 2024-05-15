@@ -11,6 +11,7 @@ Further details about reproducing the results are in that folder's [README.md](.
 ### Hardware
 Xilinx 7-Series:  
 https://www.xilinx.com/products/boards-and-kits/1-54wqge.html (basys3)
+https://www.xilinx.com/products/boards-and-kits/1-cfdwic.html (nexys_video)
 
 Xilinx UltraScale:  
 https://www.xilinx.com/products/boards-and-kits/kcu105.html (kcu105)
