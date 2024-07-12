@@ -379,7 +379,7 @@ class ConfigurationRegister:
                                 f"BIT27_SECURITY_AUTH_ERROR\t\t\t{(value[0] >> 3) & 0x1}\n"
                                 f"BIT25_CFG_BUS_WIDTH_DETECTION\t\t{(value[0] >> 1) & 0x3:02b}\n"
                                 f"BIT24_Reserved\t\t\t\t{value[0] & 0x1}\n"
-                                f"BIT21_SECURITY_STATUS\t\t\t\t{(value[1] >> 5) & 0x7:03b}\n"
+                                f"BIT21_SECURITY_STATUS\t\t\t{(value[1] >> 5) & 0x7:03b}\n"
                                 f"BIT18_CFG_STARTUP_STATE_MACHINE_PHASE\t{(value[1] >> 2) & 0x7:03b}\n"
                                 f"BIT17_SYSTEM_MONITOR_OVER_TEMP\t\t{(value[1] >> 1) & 0x1}\n"
                                 f"BIT16_SECURITY_VIOLATION\t\t\t{value[1] & 0x1}\n"
