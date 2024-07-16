@@ -507,7 +507,7 @@ class AlternatingWord(Fuzzable):
 
         super(AlternatingWord, self).__init__(
             name=name,
-            default_value=None,
+            default_value=self._value_a,
             fuzzable=True,
             fuzz_values=None,
             *args,
@@ -568,7 +568,7 @@ class AlternatingBitstream(Fuzzable):
 
         super(AlternatingBitstream, self).__init__(
             name=name,
-            default_value=None,
+            default_value=self._bitstream_a,
             fuzzable=True,
             fuzz_values=None,
             *args,

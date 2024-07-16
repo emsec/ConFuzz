@@ -11,7 +11,7 @@ class ClusterFuzzer:
     """This script can be used to split up the test cases of a fuzzer equally over multiple boards."""
 
     # The number of boards used in parallel.
-    BATCH_SIZE = 15
+    BATCH_SIZE = 16
     # The cluster only consists of Basys3 boards.
     BOARD = "basys3"
     # FDTI USB Vendor ID and Product ID of the Basys3 boards.
