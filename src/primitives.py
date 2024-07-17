@@ -482,69 +482,65 @@ class FuzzedBitstream(Fuzzable):
 
 
 class AlternatingWord(Fuzzable):
-    """Custom Fuzzable that alternates between value_a and value_b.
+    """Custom Fuzzable that alternates between two values.
 
-    The switches value defines how often the values are switched.
+    For the first test case, this primitive is rendered to value_a.
+    This primitive is not mutated and is statically rendered to value_a or value_b.
+
+    To generate test cases, a mutated primitive must be part of the request
+    (e.g., the Simple primitive or the BitstreamWord primitive).
 
     https://boofuzz.readthedocs.io/en/stable/user/protocol-definition.html#making-your-own-block-primitive
     """
 
-    def __init__(
-        self, name: str, value_a: int, value_b: int, switches: int, *args, **kwargs
-    ):
+    def __init__(self, name: str, value_a: int, value_b: int, *args, **kwargs):
         if value_a < 0 or value_a >= 0x100000000:
             raise ValueError("value_a has to be >= 0 and < 0x100000000")
 
         if value_b < 0 or value_b >= 0x100000000:
             raise ValueError("value_b has to be >= 0 and < 0x100000000")
 
-        if switches < 0:
-            raise ValueError("switches has to be >= 0")
-
         self._value_a = value_a.to_bytes(4, "big")
         self._value_b = value_b.to_bytes(4, "big")
-        self._switches = switches
+
+        self._current_mutation = None
+        self._return_value_a = False
 
         super(AlternatingWord, self).__init__(
             name=name,
             default_value=self._value_a,
-            fuzzable=True,
+            fuzzable=False,
             fuzz_values=None,
             *args,
             **kwargs,
         )
 
-    def mutations(self, default_value):
-        switch_count = 0
-        while switch_count < self._switches:
-            if switch_count % 2 == 0:
-                yield self._value_a
-            else:
-                yield self._value_b
-            switch_count += 1
+    def encode(self, value, mutation_context):
+        # If the mutation changed, we are in a new test case and switch the returned value.
+        if self._current_mutation != mutation_context.mutations:
+            self._current_mutation = mutation_context.mutations
+            self._return_value_a = not self._return_value_a
 
-    def num_mutations(self, default_value):
-        return self._switches
+        if self._return_value_a:
+            return self._value_a
+        else:
+            return self._value_b
 
 
 class AlternatingBitstream(Fuzzable):
     """Custom Fuzzable that alternates between two bitstreams.
 
     file_name_a and file_name_b define the bitstreams in the bitstreams directory of the used board.
-    The switches value defines how often the bitstreams are switched.
+    For the first test case, this primitive is rendered to bitstream_a.
+    This primitive is not mutated and is statically rendered to bitstream_ or bitstream_b.
+
+    To generate test cases, a mutated primitive must be part of the request
+    (e.g., the Simple primitive or the BitstreamWord primitive).
 
     https://boofuzz.readthedocs.io/en/stable/user/protocol-definition.html#making-your-own-block-primitive
     """
 
-    def __init__(
-        self,
-        name: str,
-        file_name_a: str,
-        file_name_b: str,
-        switches: int,
-        *args,
-        **kwargs,
-    ):
+    def __init__(self, name: str, file_name_a: str, file_name_b: str, *args, **kwargs):
         with open(os.path.join(CONSTANTS.BITSTREAMS_DIR, file_name_a), "rb") as f:
             self._bitstream_a = bytes(f.read())
 
@@ -564,28 +560,28 @@ class AlternatingBitstream(Fuzzable):
                 self._bitstream_b.index(SyncWord().render()) :
             ]
 
-        self._switches = switches
+        self._return_bitstream_a = False
+        self._current_mutation = None
 
         super(AlternatingBitstream, self).__init__(
             name=name,
-            default_value=self._bitstream_a,
-            fuzzable=True,
+            default_value=None,
+            fuzzable=False,
             fuzz_values=None,
             *args,
             **kwargs,
         )
 
-    def mutations(self, default_value):
-        switch_count = 0
-        while switch_count < self._switches:
-            if switch_count % 2 == 0:
-                yield self._bitstream_a
-            else:
-                yield self._bitstream_b
-            switch_count += 1
+    def encode(self, value, mutation_context):
+        # If the mutation changed, we are in a new test case and switch the returned bitstream.
+        if self._current_mutation != mutation_context.mutations:
+            self._current_mutation = mutation_context.mutations
+            self._return_bitstream_a = not self._return_bitstream_a
 
-    def num_mutations(self, default_value):
-        return self._switches
+        if self._return_bitstream_a:
+            return self._bitstream_a
+        else:
+            return self._bitstream_b
 
 
 class EncryptedSeries7Block(FuzzableBlock):
