@@ -41,6 +41,7 @@ class OpenOCDMonitor(BaseMonitor):
         sync_after_restart: bool = True,
         sleep_after_fuzz: float = 0.0,
         sync_after_fuzz: bool = False,
+        try_auto_sync_after_fuzz: bool = False,
     ):
         self._fuzz_data_logger = fuzz_data_logger
         self._openocd_connection = openocd_connection
@@ -89,7 +90,7 @@ class OpenOCDMonitor(BaseMonitor):
 
         if self._sync_after_restart:
             # Send the sync word and prevent the output using the list command.
-            # See src/constants.py for more detailed explanations.
+            # See src/connections.py for more detailed explanations.
             restart_cmds.append("irscan $tap 0x05; drscan $tap 32 0x66AA9955; list;")
 
         self._restart_cmds = "; ".join(restart_cmds)
@@ -98,6 +99,7 @@ class OpenOCDMonitor(BaseMonitor):
             raise ValueError("sleep_after_fuzz has to be >= 0")
         self._sleep_after_fuzz = sleep_after_fuzz
         self._sync_after_fuzz = sync_after_fuzz
+        self._try_auto_sync_after_fuzz = try_auto_sync_after_fuzz
 
         self._state: list[ConfigurationRegister] = []
         self._fuzz_response: ConfigurationRegister = None
@@ -245,6 +247,38 @@ class OpenOCDMonitor(BaseMonitor):
     def post_send(self, target=None, fuzz_data_logger=None, session=None):
         if self._sleep_after_fuzz:
             time.sleep(self._sleep_after_fuzz)
+
+        if not self._sync_after_fuzz and self._try_auto_sync_after_fuzz:
+            self._fuzz_data_logger.open_test_step("Try auto sync after fuzz")
+
+            status_register_value = self._openocd_connection.send_bitstreams(
+                [
+                    Bitstream(
+                        b"".join(
+                            primitive.render()
+                            for primitive in [
+                                Type1ReadPacket(
+                                    name="read_from_stat", register_address=7
+                                ),
+                                NOP(2),
+                            ]
+                        ),
+                        response_length=32,
+                    )
+                ]
+            )[0]
+
+            if status_register_value == b"\x00\x00\x00\x00":
+                self._fuzz_data_logger.log_info(
+                    "Send sync word because status register is zero"
+                )
+
+                # The first probe bitstream is just the sync word.
+                self._openocd_connection.send_bitstreams(self._probe_bitstreams[:1])
+            else:
+                self._fuzz_data_logger.log_info(
+                    "No resync necessary because the status register is not zero"
+                )
 
         self._probe_state()
 

@@ -102,6 +102,7 @@ class MainFuzzer:
         sync_after_restart: bool = True,
         sleep_after_fuzz: float = 0.0,
         sync_after_fuzz: bool = False,
+        try_auto_sync_after_fuzz: bool = False,
     ) -> Target:
         """Prepare a Target object with connection and monitor for the current fuzzer."""
 
@@ -126,6 +127,9 @@ class MainFuzzer:
         else:
             connection = openocd_connection
 
+        if self._debug:
+            try_auto_sync_after_fuzz = True
+
         return Target(
             connection=connection,
             monitors=[
@@ -139,6 +143,7 @@ class MainFuzzer:
                     sync_after_restart,
                     sleep_after_fuzz,
                     sync_after_fuzz,
+                    try_auto_sync_after_fuzz,
                 )
             ],
         )
@@ -253,7 +258,9 @@ if __name__ == "__main__":
             action="store_true",
             help=(
                 "The debugging mode logs and prints the OpenOCD commands and responses. "
-                "Additionally the last transmitted bitstream is logged as .bit file in the results directory of the fuzzer."
+                "In this mode, ConFuzz automatically tries to resync with the configuration engine "
+                "if the status register is zero after a test case. "
+                "Additionally, the last transmitted bitstream is logged as .bit file in the results directory of the fuzzer."
             ),
         ),
         parser.add_argument(
