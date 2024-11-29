@@ -1,16 +1,16 @@
-class BASYS3:
-    """Device specific constants for the Basys3 board.
+class ARTY_A7:
+    """Device specific constants for the Arty A7 board.
 
-    https://www.xilinx.com/products/boards-and-kits/1-54wqge.html
+    https://www.xilinx.com/products/boards-and-kits/1-w51quh.html
     https://docs.xilinx.com/r/en-US/ug470_7Series_Config
     """
 
     OPENOCD_TAP_NAME = "xc7"
     # Located in STATIC_DIR.
-    OPENOCD_BASE_CFG = "openocd-digilent-basys3.cfg"
+    OPENOCD_BASE_CFG = "digilent_arty.cfg"
 
     XILINX_SERIES = "series_7"
-    DEVICE_IDCODE = b"\x03\x62\xd0\x93"  # 7A35T
+    DEVICE_IDCODE = b"\x03\x63\x10\x93"  # 7A100T
     # Frame length in 32-bit words.
     FRAME_LENGTH = 101
     # There are no pipelining words for the 7-series.
@@ -24,10 +24,31 @@ class BASYS3:
     # If the device is automatically configured after restart (e. g. by loading a bitstream from flash),
     # the design on the device crashes if the configuration engine is accessed before the design finished loading.
     # Therefore, the fuzzer is delayed by the specified amount of time after the device restarts.
-    RESTART_DELAY_CONFIGURATION = 0.054  # 54 ms
+    RESTART_DELAY_CONFIGURATION = 0.202  # 202 ms (untested)
 
     # FABRIC_SIZE and ROW_END_POSITIONS are needed to construct valid RSA bitstreams.
     # Since the 7-series does not support RSA bitstreams, these values are set to None.
+    FABRIC_SIZE = None
+    ROW_END_POSITIONS = None
+
+
+class BASYS3:
+    """Device specific constants for the Basys3 board.
+
+    https://www.xilinx.com/products/boards-and-kits/1-54wqge.html
+    https://docs.xilinx.com/r/en-US/ug470_7Series_Config
+    """
+
+    OPENOCD_TAP_NAME = "xc7"
+    OPENOCD_BASE_CFG = "openocd-digilent-basys3.cfg"
+
+    XILINX_SERIES = "series_7"
+    DEVICE_IDCODE = b"\x03\x62\xd0\x93"  # 7A35T
+    FRAME_LENGTH = 101
+    PIPELINING_WORDS = 0
+    RESTART_DELAY = 0.002  # 2 ms
+    RESTART_DELAY_CONFIGURATION = 0.054  # 54 ms
+
     FABRIC_SIZE = None
     ROW_END_POSITIONS = None
 
@@ -104,27 +125,15 @@ class NEXYS_VIDEO:
     """
 
     OPENOCD_TAP_NAME = "xc7"
-    # Located in STATIC_DIR.
     OPENOCD_BASE_CFG = "digilent_nexys_video.cfg"
 
     XILINX_SERIES = "series_7"
     DEVICE_IDCODE = b"\x03\x63\x60\x93"  # 7A200T
-    # Frame length in 32-bit words.
     FRAME_LENGTH = 101
-    # There are no pipelining words for the 7-series.
-    # https://docs.xilinx.com/v/u/en-US/ug570-ultrascale-configuration
-    # Step 8., page 182
     PIPELINING_WORDS = 0
-    # The time in seconds it takes to restart the device.
-    # Commands sent to the configuration engine before the restart is complete are ignored.
-    # Since the first command sent after the restart is the sync word, all subsequent commands will also fail.
     RESTART_DELAY = 0.002  # 2 ms
-    # If the device is automatically configured after restart (e. g. by loading a bitstream from flash),
-    # the design on the device crashes if the configuration engine is accessed before the design finished loading.
-    # Therefore, the fuzzer is delayed by the specified amount of time after the device restarts.
     RESTART_DELAY_CONFIGURATION = 0.202  # 202 ms
-    # FABRIC_SIZE and ROW_END_POSITIONS are needed to construct valid RSA bitstreams.
-    # Since the 7-series does not support RSA bitstreams, these values are set to None.
+
     FABRIC_SIZE = None
     ROW_END_POSITIONS = None
 
@@ -169,7 +178,14 @@ class CONSTANTS:
     # if no board is specified via command line arguments.
     BOARD = "basys3"
     # For each available board a BOARD_CONSTANTS class (with all uppercase letters in the title) is necessary.
-    AVAILABLE_BOARDS = ["basys3", "kcu105", "kcu116", "nexys_video", "xem8320"]
+    AVAILABLE_BOARDS = [
+        "arty_a7",
+        "basys3",
+        "kcu105",
+        "kcu116",
+        "nexys_video",
+        "xem8320",
+    ]
     BOARD_CONSTANTS = BASYS3
 
     BITSTREAMS_DIR = "bitstreams/" + BOARD

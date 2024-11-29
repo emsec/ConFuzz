@@ -10,6 +10,7 @@ Further details about reproducing the results are in that folder's [README.md](.
 
 ### Hardware
 Xilinx 7-Series:  
+https://www.xilinx.com/products/boards-and-kits/1-w51quh.html (arty_a7)  
 https://www.xilinx.com/products/boards-and-kits/1-54wqge.html (basys3)  
 https://www.xilinx.com/products/boards-and-kits/1-cfdwic.html (nexys_video)
 
@@ -199,7 +200,7 @@ session.fuzz(self._test_case_name)
 Once finished, the fuzzer can be started by passing `example_fuzzer` as `--fuzzer-name` to the [main_fuzzer.py](./main_fuzzer.py).
 
 ### Steps to add a new development board
-- Add class for the new board to [/src/constants.py](./src/constants.py#L138) and add the board to the `AVAILABLE_BOARDS` constant.
+- Add class for the new board to [/src/constants.py](./src/constants.py#L181) and add the board to the `AVAILABLE_BOARDS` constant.
 - Create board folders in [/bitstreams](./bitstreams/), [/fuzzers](./fuzzers/), [/register_settings](./register_settings/), and [/static](./static/).
 - Create an OpenOCD configuration file in the newly created folder in [/static](./static/).
 - Create a `default_register_settings.ini` in the newly created folder in [/register_settings](./register_settings/).

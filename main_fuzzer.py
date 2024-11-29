@@ -35,6 +35,8 @@ class MainFuzzer:
         CONSTANTS.update_board(board)
 
         match CONSTANTS.BOARD:
+            case "arty_a7":
+                import fuzzers.arty_a7 as fuzzers
             case "basys3":
                 import fuzzers.basys3 as fuzzers
             case "kcu105":
