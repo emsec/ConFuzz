@@ -87,7 +87,7 @@ class KCU116:
     OPENOCD_BASE_CFG = "kcu116.cfg"
 
     XILINX_SERIES = "ultrascaleplus"
-    DEVICE_IDCODE = b"\x04\xA6\x20\x93"  # KU5P
+    DEVICE_IDCODE = b"\x04\xa6\x20\x93"  # KU5P
     FRAME_LENGTH = 93
     PIPELINING_WORDS = 25
     RESTART_DELAY = 0.005  # 5 ms
@@ -149,7 +149,7 @@ class XEM8320:
     OPENOCD_BASE_CFG = "xem8320.cfg"
 
     XILINX_SERIES = "ultrascaleplus"
-    DEVICE_IDCODE = b"\x04\xA6\x40\x93"  # AU25P
+    DEVICE_IDCODE = b"\x04\xa6\x40\x93"  # AU25P
     FRAME_LENGTH = 93
     PIPELINING_WORDS = 25
     RESTART_DELAY = 0.005  # 5 ms

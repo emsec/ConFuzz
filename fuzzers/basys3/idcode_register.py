@@ -88,17 +88,17 @@ def fuzz_idcode_register_irrelevant_bits(self, session_kwargs: dict = {}):
             ),
             Static(
                 name="fdri_frame_1",
-                default_value=b"\xF0\x0D\xF0\x0D"
+                default_value=b"\xf0\x0d\xf0\x0d"
                 * CONSTANTS.BOARD_CONSTANTS.FRAME_LENGTH,
             ),
             Static(
                 name="fdri_frame_2",
-                default_value=b"\xBE\xEF\xBE\xEF"
+                default_value=b"\xbe\xef\xbe\xef"
                 * CONSTANTS.BOARD_CONSTANTS.FRAME_LENGTH,
             ),
             Static(
                 name="fdri_frame_dummy",
-                default_value=b"\xDE\xAD\xC0\xDE"
+                default_value=b"\xde\xad\xc0\xde"
                 * CONSTANTS.BOARD_CONSTANTS.FRAME_LENGTH,
             ),
             NOP(2),
@@ -177,17 +177,17 @@ def fuzz_idcode_register_relevant_bits(self, session_kwargs: dict = {}):
             ),
             Static(
                 name="fdri_frame_1",
-                default_value=b"\xF0\x0D\xF0\x0D"
+                default_value=b"\xf0\x0d\xf0\x0d"
                 * CONSTANTS.BOARD_CONSTANTS.FRAME_LENGTH,
             ),
             Static(
                 name="fdri_frame_2",
-                default_value=b"\xBE\xEF\xBE\xEF"
+                default_value=b"\xbe\xef\xbe\xef"
                 * CONSTANTS.BOARD_CONSTANTS.FRAME_LENGTH,
             ),
             Static(
                 name="fdri_frame_dummy",
-                default_value=b"\xDE\xAD\xC0\xDE"
+                default_value=b"\xde\xad\xc0\xde"
                 * CONSTANTS.BOARD_CONSTANTS.FRAME_LENGTH,
             ),
             NOP(2),

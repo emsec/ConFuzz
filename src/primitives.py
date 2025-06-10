@@ -31,7 +31,7 @@ class SyncWord(Static):
 
         super(SyncWord, self).__init__(
             name=f"SyncWord{SyncWord._id}",
-            default_value=b"\xAA\x99\x55\x66",
+            default_value=b"\xaa\x99\x55\x66",
             *args,
             **kwargs,
         )
@@ -735,7 +735,7 @@ class EncryptedSeries7Block(FuzzableBlock):
             + ((data_length + 64) * 8).to_bytes(4, "big")  # In bits
             + b"\x00" * 256
             + self._hmac_key_opad
-            + b"\x5C" * 32
+            + b"\x5c" * 32
             + b"\x00" * 32
             + b"\x80"
             + b"\x00" * 29
@@ -974,7 +974,7 @@ class EncryptedXGHashUltraScaleBlock(AuthenticatedUltraScaleBlock):
         # Encrypt one block where every bit is set in AES-ECB mode.
         # The resulting ciphertext is used to derive the hash key coefficients and initial checksum.
         cipher = AES.new(self._key_file.aes_keys[0].key, AES.MODE_ECB)
-        ciphertext = cipher.encrypt(b"\xFF" * 16)
+        ciphertext = cipher.encrypt(b"\xff" * 16)
 
         # Precalculate the hash key coefficients.
         # These coefficients are used to calculate the checksums.
@@ -1238,14 +1238,14 @@ class RSAUltraScaleBlock(AuthenticatedUltraScaleBlock):
             rsa_footer_commands = [
                 # The commands DGHIGH, START, and DESYNC are necessary to finish the configuration of the device.
                 Type1WritePacket(name="write_to_cmd", register_address=4),
-                Static(name="grestore_code", default_value=b"\x00\x00\x00\x0A"),
+                Static(name="grestore_code", default_value=b"\x00\x00\x00\x0a"),
                 NOP(2),
                 Type1WritePacket(name="write_to_cmd", register_address=4),
                 Static(name="dghigh_code", default_value=b"\x00\x00\x00\x03"),
                 Type1WritePacket(name="write_to_cmd", register_address=4),
                 Static(name="start_code", default_value=b"\x00\x00\x00\x05"),
                 Type1WritePacket(name="write_to_cmd", register_address=4),
-                Static(name="desync_code", default_value=b"\x00\x00\x00\x0D"),
+                Static(name="desync_code", default_value=b"\x00\x00\x00\x0d"),
                 NOP(150),
             ]
             rsa_footer = b"".join(
@@ -1359,7 +1359,7 @@ class RSAUltraScaleBlock(AuthenticatedUltraScaleBlock):
         # in combination with pkcs1_15 and additionally we need to reverse the hash before signing it.
         # The number of padding bytes is always identical becaus the generated hash has always the same size.
         # https://www.rfc-editor.org/rfc/rfc8017#section-9.2
-        padded_hash = b"\x00\x01" + b"\xFF" * 205 + b"\x00" + reversed_keccak_hash
+        padded_hash = b"\x00\x01" + b"\xff" * 205 + b"\x00" + reversed_keccak_hash
 
         # We can not use the sign function of PyCryptodome because we manually constructed the hash.
         # Therefore we use the decrypt function of the RSA private key to sign the hash.

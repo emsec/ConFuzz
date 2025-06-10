@@ -55,7 +55,7 @@ def fuzz_header_type_opcode(self, session_kwargs: dict = {}):
             Static(name="ctl0_value", default_value=b"\x00\x00\x04\x00"),
             NOP(2),
             Type1WritePacket(name="write_to_wbstar", register_address=16),
-            Static(name="wbstar_value", default_value=b"\xF0\xF0\xF0\xF0"),
+            Static(name="wbstar_value", default_value=b"\xf0\xf0\xf0\xf0"),
             NOP(2),
             BitstreamWord(
                 name="fuzzed_read_from_wbstar",
@@ -110,7 +110,7 @@ def fuzz_register_address(self, session_kwargs: dict = {}):
             Static(name="ctl0_value", default_value=b"\x00\x00\x04\x00"),
             NOP(2),
             Type1WritePacket(name="write_to_wbstar", register_address=16),
-            Static(name="wbstar_value", default_value=b"\xF0\xF0\xF0\xF0"),
+            Static(name="wbstar_value", default_value=b"\xf0\xf0\xf0\xf0"),
             NOP(2),
             BitstreamWord(
                 name="fuzzed_read_from_wbstar",

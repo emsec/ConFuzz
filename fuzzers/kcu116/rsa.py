@@ -62,11 +62,11 @@ def fuzz_plaintext_rsa_bitstream(self, session_kwargs: dict = {}):
                     # Original RSA header, except ConfigFallback is disabled in the CTL0 register.
                     NOP(),
                     Type1WritePacket(name="write_to_mask_1", register_address=6),
-                    Static(name="mask_value_1", default_value=b"\xFF\xFF\xFF\xFF"),
+                    Static(name="mask_value_1", default_value=b"\xff\xff\xff\xff"),
                     Type1WritePacket(name="write_to_ctl0_1", register_address=5),
                     Static(name="ctl0_value_1", default_value=b"\x00\x00\x05\x01"),
                     Type1WritePacket(name="write_to_mask_2", register_address=6),
-                    Static(name="mask_value_2", default_value=b"\xFF\xF3\xFF\xFF"),
+                    Static(name="mask_value_2", default_value=b"\xff\xf3\xff\xff"),
                     Type1WritePacket(name="write_to_ctl1", register_address=24),
                     Static(name="ctl1_value", default_value=b"\x00\x00\x00\x00"),
                     NOP(8),
@@ -78,14 +78,14 @@ def fuzz_plaintext_rsa_bitstream(self, session_kwargs: dict = {}):
                     # 25 or 26 frames of fabric data for plaintext test mode RSA bitstreams.
                     Static(
                         name="fabric_data",
-                        default_value=b"\xDE\xAD\xC0\xDE"
+                        default_value=b"\xde\xad\xc0\xde"
                         * CONSTANTS.BOARD_CONSTANTS.FRAME_LENGTH
                         * 25,
                     ),
                     # Original RSA footer, except ConfigFallback is disabled in the CTL0 register.
                     NOP(2),
                     Type1WritePacket(name="write_to_cmd_2", register_address=4),
-                    Static(name="grestore_code", default_value=b"\x00\x00\x00\x0A"),
+                    Static(name="grestore_code", default_value=b"\x00\x00\x00\x0a"),
                     NOP(2),
                     Type1WritePacket(name="write_to_cmd_3", register_address=4),
                     Static(name="dghigh_code", default_value=b"\x00\x00\x00\x03"),
@@ -94,14 +94,14 @@ def fuzz_plaintext_rsa_bitstream(self, session_kwargs: dict = {}):
                     Static(name="start_code", default_value=b"\x00\x00\x00\x05"),
                     NOP(),
                     Type1WritePacket(name="write_to_far_2", register_address=1),
-                    Static(name="far_value_2", default_value=b"\x07\xFC\x00\x00"),
+                    Static(name="far_value_2", default_value=b"\x07\xfc\x00\x00"),
                     Type1WritePacket(name="write_to_mask_3", register_address=6),
                     Static(name="mask_value_3", default_value=b"\x00\x00\x05\x01"),
                     Type1WritePacket(name="write_to_ctl0_2", register_address=5),
                     Static(name="ctl0_value_2", default_value=b"\x00\x00\x05\x01"),
                     NOP(2),
                     Type1WritePacket(name="write_to_cmd_5", register_address=4),
-                    Static(name="desync_code", default_value=b"\x00\x00\x00\x0D"),
+                    Static(name="desync_code", default_value=b"\x00\x00\x00\x0d"),
                     NOP(119),
                 ),
                 children_contain_header_and_footer=True,
@@ -197,11 +197,11 @@ def fuzz_encrypted_rsa_bitstream(self, session_kwargs: dict = {}):
                     # Original RSA header, except ConfigFallback is disabled in the CTL0 register.
                     NOP(),
                     Type1WritePacket(name="write_to_mask_1", register_address=6),
-                    Static(name="mask_value_1", default_value=b"\xFF\xFF\xFF\xFF"),
+                    Static(name="mask_value_1", default_value=b"\xff\xff\xff\xff"),
                     Type1WritePacket(name="write_to_ctl0_1", register_address=5),
                     Static(name="ctl0_value_1", default_value=b"\x00\x00\x05\x41"),
                     Type1WritePacket(name="write_to_mask_2", register_address=6),
-                    Static(name="mask_value_2", default_value=b"\xFF\xF3\xFF\xFF"),
+                    Static(name="mask_value_2", default_value=b"\xff\xf3\xff\xff"),
                     Type1WritePacket(name="write_to_ctl1", register_address=24),
                     Static(name="ctl1_value", default_value=b"\x00\x00\x00\x00"),
                     NOP(8),
@@ -213,14 +213,14 @@ def fuzz_encrypted_rsa_bitstream(self, session_kwargs: dict = {}):
                     # 24 frames of fabric data for encrypted test mode RSA bitstreams.
                     Static(
                         name="fabric_data",
-                        default_value=b"\xDE\xAD\xC0\xDE"
+                        default_value=b"\xde\xad\xc0\xde"
                         * CONSTANTS.BOARD_CONSTANTS.FRAME_LENGTH
                         * 24,
                     ),
                     # Original RSA footer, except ConfigFallback is disabled in the CTL0 register.
                     NOP(2),
                     Type1WritePacket(name="write_to_cmd_2", register_address=4),
-                    Static(name="grestore_code", default_value=b"\x00\x00\x00\x0A"),
+                    Static(name="grestore_code", default_value=b"\x00\x00\x00\x0a"),
                     NOP(2),
                     Type1WritePacket(name="write_to_cmd_3", register_address=4),
                     Static(name="dghigh_code", default_value=b"\x00\x00\x00\x03"),
@@ -229,14 +229,14 @@ def fuzz_encrypted_rsa_bitstream(self, session_kwargs: dict = {}):
                     Static(name="start_code", default_value=b"\x00\x00\x00\x05"),
                     NOP(),
                     Type1WritePacket(name="write_to_far_2", register_address=1),
-                    Static(name="far_value_2", default_value=b"\x07\xFC\x00\x00"),
+                    Static(name="far_value_2", default_value=b"\x07\xfc\x00\x00"),
                     Type1WritePacket(name="write_to_mask_3", register_address=6),
                     Static(name="mask_value_3", default_value=b"\x00\x00\x05\x41"),
                     Type1WritePacket(name="write_to_ctl0_2", register_address=5),
                     Static(name="ctl0_value_2", default_value=b"\x00\x00\x05\x41"),
                     NOP(2),
                     Type1WritePacket(name="write_to_cmd_5", register_address=4),
-                    Static(name="desync_code", default_value=b"\x00\x00\x00\x0D"),
+                    Static(name="desync_code", default_value=b"\x00\x00\x00\x0d"),
                     NOP(119),
                 ),
                 children_contain_header_and_footer=True,

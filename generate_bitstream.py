@@ -35,17 +35,17 @@ bitstream = [
             ),
             Static(
                 name="fdri_value_1",
-                default_value=b"\xF0\x0D\xF0\x0D"
+                default_value=b"\xf0\x0d\xf0\x0d"
                 * CONSTANTS.BOARD_CONSTANTS.FRAME_LENGTH,
             ),
             Static(
                 name="fdri_value_2",
-                default_value=b"\xBE\xEF\xBE\xEF"
+                default_value=b"\xbe\xef\xbe\xef"
                 * CONSTANTS.BOARD_CONSTANTS.FRAME_LENGTH,
             ),
             Static(
                 name="fdri_value_3",
-                default_value=b"\xDE\xAD\xC0\xDE"
+                default_value=b"\xde\xad\xc0\xde"
                 * CONSTANTS.BOARD_CONSTANTS.FRAME_LENGTH,
             ),
         ),

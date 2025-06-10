@@ -29,7 +29,7 @@ class OpenOCDConnection(TCPSocketConnection):
     OPEN_CONNECTION_TIMEOUT = 1
     # Every command and response is terminated with the command token 0x1A.
     # https://openocd.org/doc/html/Tcl-Scripting-API.html#Tcl-RPC-server
-    COMMAND_TOKEN = "\x1A"
+    COMMAND_TOKEN = "\x1a"
     # If a bitstream consits of more than 104856 bytes (26214 32-bit words)
     # the drscan command in the OpenOCD .cfg file leads to a segmentation fault (exit code 139).
     # Apparently in this case the number of arguments the drscan command can handle is exceeded.

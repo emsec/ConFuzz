@@ -44,7 +44,7 @@ def fuzz_ctl0_register_reserved(self, session_kwargs: dict = {}):
         name="ctl0_request",
         children=(
             Type1WritePacket(name="write_to_mask", register_address=6),
-            Static(name="mask_value", default_value=b"\x3F\xFF\xEE\x86"),
+            Static(name="mask_value", default_value=b"\x3f\xff\xee\x86"),
             Type1WritePacket(name="write_to_ctl0", register_address=5),
             BitstreamWord(
                 name="fuzzed_ctl0_value",
@@ -101,18 +101,18 @@ def fuzz_ctl0_register_reserved_bits_11_14_29(self, session_kwargs: dict = {}):
             ),
             Static(
                 name="mask_value_set_bits_10_11_14_29",
-                default_value=b"\x20\x00\x4C\x00",
+                default_value=b"\x20\x00\x4c\x00",
             ),
             Type1WritePacket(
                 name="write_to_ctl0_set_bits_10_11_14_29", register_address=5
             ),
             Static(
                 name="ctl0_value_set_bits_10_11_14_29",
-                default_value=b"\x20\x00\x4C\x00",
+                default_value=b"\x20\x00\x4c\x00",
             ),
             NOP(2),
             Type1WritePacket(name="write_to_mask", register_address=6),
-            Static(name="mask_value", default_value=b"\x3F\xFF\xEE\x86"),
+            Static(name="mask_value", default_value=b"\x3f\xff\xee\x86"),
             Type1WritePacket(name="write_to_ctl0", register_address=5),
             BitstreamWord(
                 name="fuzzed_ctl0_value",
@@ -177,7 +177,7 @@ def fuzz_ctl0_register_reserved_bits_1_7(self, session_kwargs: dict = {}):
             ),
             NOP(2),
             Type1WritePacket(name="write_to_mask", register_address=6),
-            Static(name="mask_value", default_value=b"\x3F\xFF\xEE\x86"),
+            Static(name="mask_value", default_value=b"\x3f\xff\xee\x86"),
             Type1WritePacket(name="write_to_ctl0", register_address=5),
             BitstreamWord(
                 name="fuzzed_ctl0_value",
