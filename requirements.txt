@@ -1,5 +1,5 @@
-black==24.10.0
-isort==5.13.2
-pycryptodome==3.21.0
+black==25.1.0
+isort==6.0.1
+pycryptodome==3.23.0
 pyserial==3.5
-requests==2.32.3
+requests==2.32.4
