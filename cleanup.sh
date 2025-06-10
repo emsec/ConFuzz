@@ -13,7 +13,7 @@ set -x
 isort $script_dir/fuzzers $script_dir/src $script_dir/analyze_logs.py $script_dir/cluster_fuzzer.py $script_dir/generate_bitstream.py $script_dir/main_fuzzer.py
 
 # https://black.readthedocs.io/en/stable/
-black --target-version py310 --target-version py311 --target-version py312 $script_dir/fuzzers $script_dir/src $script_dir/analyze_logs.py $script_dir/cluster_fuzzer.py $script_dir/generate_bitstream.py $script_dir/main_fuzzer.py
+black --target-version py310 --target-version py311 --target-version py312 --target-version py313 $script_dir/fuzzers $script_dir/src $script_dir/analyze_logs.py $script_dir/cluster_fuzzer.py $script_dir/generate_bitstream.py $script_dir/main_fuzzer.py
 
 # Update and build boofuzz from source.
 cd $script_dir/boofuzz
