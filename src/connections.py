@@ -231,7 +231,7 @@ class OpenOCDConnection(TCPSocketConnection):
                 cmds.append(f"runtest {bitstream.runtest}; ")
 
             if bitstream.jstart:
-                cmds.append("irscan $tap 0xC0; ")  # JSTART
+                cmds.append("irscan $tap 0x0C; ")  # JSTART
 
         cmds.append("return $data; ")
 
