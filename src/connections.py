@@ -211,7 +211,7 @@ class OpenOCDConnection(TCPSocketConnection):
                 for j in range(
                     i, min(data_length, i + OpenOCDConnection.DRSCAN_LIMIT), 4
                 ):
-                    drscan += f' 32 0x{int.from_bytes(data[j : j + 4], "big"):08X}'
+                    drscan += " 32 0x" + data[j : j + 4].hex()
                 # The list command is used to surpress the output of the drscan command.
                 # Only for the last command of a sequence response is returned.
                 # The list command creates an empty list which is represented as an empty string.

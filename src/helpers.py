@@ -4,6 +4,9 @@ from boofuzz.fuzz_logger import FuzzLogger
 
 from .constants import CONSTANTS
 
+# lookup table for byte with reversed bit order
+LUT = bytes(int(f"{byte:08b}"[::-1], 2) for byte in range(256))
+
 
 def swap_endianness_and_bits(data: bytes | bytearray) -> bytes:
     """Swap the bytewise endianness for every 32-bit word in data and additionally swap the bits in every byte.
@@ -22,7 +25,7 @@ def swap_endianness_and_bits(data: bytes | bytearray) -> bytes:
     # Swap the bits in each byte as described in the Xilinx documentation.
     # https://docs.xilinx.com/r/en-US/ug470_7Series_Config
     # Figure 5-1, page 76
-    return bytes(int(f"{byte:08b}"[::-1], 2) for byte in data)
+    return bytes(data.translate(LUT))
 
 
 def send_slack_notification(fuzz_data_logger: FuzzLogger, text: str) -> None:
