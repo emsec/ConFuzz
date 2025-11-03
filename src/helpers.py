@@ -4,7 +4,7 @@ from boofuzz.fuzz_logger import FuzzLogger
 
 from .constants import CONSTANTS
 
-# lookup table for byte with reversed bit order
+# Lookup table for byte with reversed bit order.
 LUT = bytes(int(f"{byte:08b}"[::-1], 2) for byte in range(256))
 
 
