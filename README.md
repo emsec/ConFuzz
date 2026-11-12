@@ -212,7 +212,7 @@ Once finished, the fuzzer can be started by passing `example_fuzzer` as `--fuzze
 
 
 ## License
-This repository is distributed under the MIT License. See [LICENCE](./LICENCE) for more information.
+This repository is distributed under the MIT License. See [LICENSE](./LICENSE) for more information.
 
 
 
